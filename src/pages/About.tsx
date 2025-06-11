@@ -73,14 +73,14 @@ const ValueItem = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   h3 {
     color: var(--text-primary);
     margin: 0 0 1rem 0;
     font-size: 1.125rem;
     font-weight: 600;
   }
-  
+
   p {
     color: var(--text-secondary);
     margin: 0;
@@ -108,6 +108,7 @@ const TeamSection = styled(Section)`
 `;
 
 const TeamCard = styled.div`
+  flex: 1 1 auto;
   background: var(--bg-primary);
   border: 1px solid var(--border-color);
   border-radius: 1rem;
@@ -290,41 +291,55 @@ const About = () => {
           <ValuesGrid>
             <ValueItem>
               <ValueNumber>1</ValueNumber>
-              <h3>Shared Authorship</h3>
-              <p>
-                Bind's uniqueness comes from gathering multiple perspectives..
-                Our tools empower groups to tell their truth in one collective
-                voice.
-              </p>
+              <FlexBox gap={12} style={{ alignItems: "center" }}>
+                <SubtitleText style={{ textAlign: "center" }}>
+                  Shared Authorship
+                </SubtitleText>
+                <CaptionText>
+                  Bind's uniqueness comes from gathering multiple perspectives..
+                  Our tools empower groups to tell their truth in one collective
+                  voice.
+                </CaptionText>
+              </FlexBox>
             </ValueItem>
 
             <ValueItem>
               <ValueNumber>2</ValueNumber>
-              <h3>Honest Memory</h3>
-              <p>
-                Bind values authenticity over perfection. Our books do not
-                idealize, but they reflect; with all the complexity that real
-                life brings.
-              </p>
+              <FlexBox gap={12} style={{ alignItems: "center" }}>
+                <SubtitleText style={{ textAlign: "center" }}>
+                  Honest Memory
+                </SubtitleText>
+                <CaptionText>
+                  Bind values authenticity over perfection. Our books do not
+                  idealize, but they reflect; with all the complexity that real
+                  life brings.
+                </CaptionText>
+              </FlexBox>
             </ValueItem>
 
             <ValueItem>
               <ValueNumber>3</ValueNumber>
-              <h3>Emotional Presence</h3>
-              <p>
-                Every book is designed to carry emotion over information. We aim
-                to make memory tangible, immersive, and lasting.
-              </p>
+              <FlexBox gap={12} style={{ alignItems: "center" }}>
+                <SubtitleText>Emotional Presence</SubtitleText>
+                <CaptionText>
+                  Every book is designed to carry emotion over information. We
+                  aim to make memory tangible, immersive, and lasting.
+                </CaptionText>
+              </FlexBox>
             </ValueItem>
 
             <ValueItem>
               <ValueNumber>4</ValueNumber>
-              <h3>Physical Permanence</h3>
-              <p>
-                Bind creates objects meant to last, physically and emotionally.
-                The printed book becomes a future-proof vessel of shared
-                remembrance.
-              </p>
+              <FlexBox gap={12} style={{ alignItems: "center" }}>
+                <SubtitleText style={{ textAlign: "center" }}>
+                  Physical Permanence
+                </SubtitleText>
+                <CaptionText>
+                  Bind creates objects meant to last, physically and
+                  emotionally. The printed book becomes a future-proof vessel of
+                  shared remembrance.
+                </CaptionText>
+              </FlexBox>
             </ValueItem>
           </ValuesGrid>
         </Container>
@@ -339,45 +354,45 @@ const About = () => {
             </BodyText>
           </SectionHeader>
 
-          <CardContainer>
+          <CardContainer style={{ justifyContent: "center" }}>
             <TeamCard>
               <TeamAvatar>HL</TeamAvatar>
               <BodyText bold={true}>Hyewon Lee</BodyText>
-              <TeamRole>Role</TeamRole>
-              <p>
+              <CaptionText>Visual Designer</CaptionText>
+              {/* <p>
                 explaination explaination explaination explaination explaination
                 explaination explaination explaination explaination explaination
-              </p>
+              </p> */}
             </TeamCard>
 
             <TeamCard>
               <TeamAvatar>JL</TeamAvatar>
               <BodyText bold={true}>JeongHeon Lee</BodyText>
-              <CaptionText>Role</CaptionText>
-              <p>
+              <CaptionText>Story Teller</CaptionText>
+              {/* <p>
                 explaination explaination explaination explaination explaination
                 explaination explaination explaination explaination explaination
-              </p>
+              </p> */}
             </TeamCard>
 
             <TeamCard>
               <TeamAvatar>SJ</TeamAvatar>
               <BodyText bold={true}>Sunwoo Jeong</BodyText>
-              <CaptionText>Role</CaptionText>
-              <p>
+              <CaptionText>Product Developer</CaptionText>
+              {/* <p>
                 explaination explaination explaination explaination explaination
                 explaination explaination explaination explaination explaination
-              </p>
+              </p> */}
             </TeamCard>
 
             <TeamCard>
               <TeamAvatar>YH</TeamAvatar>
               <BodyText bold={true}>Yushan Huang</BodyText>
-              <CaptionText>Role</CaptionText>
-              <p>
+              <CaptionText>Visual Communicator</CaptionText>
+              {/* <p>
                 explaination explaination explaination explaination explaination
                 explaination explaination explaination explaination explaination
-              </p>
+              </p> */}
             </TeamCard>
           </CardContainer>
         </Container>

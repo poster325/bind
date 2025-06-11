@@ -451,13 +451,13 @@ const Home: React.FC = () => {
             </ScrollButton>
           </HeroContent>
         </Container>
-        <FloatingImage src="/imgs/home1.jpg" alt="Floating Image 1" />
+        <FloatingImage src="/imgs/home7.jpg" alt="Floating Image 1" />
         <FloatingImage src="/imgs/home2.jpg" alt="Floating Image 2" />
         <FloatingImage src="/imgs/home3.jpg" alt="Floating Image 3" />
         <FloatingImage src="/imgs/home4.jpg" alt="Floating Image 4" />
-        <FloatingImage src="/imgs/home1.jpg" alt="Floating Image 5" />
-        <FloatingImage src="/imgs/home3.jpg" alt="Floating Image 6" />
-        <FloatingImage src="/imgs/home4.jpg" alt="Floating Image 7" />
+        <FloatingImage src="/imgs/home5.jpg" alt="Floating Image 5" />
+        <FloatingImage src="/imgs/home6.jpg" alt="Floating Image 6" />
+        <FloatingImage src="/imgs/home8.jpg" alt="Floating Image 7" />
         <FloatingImage src="/imgs/home1.jpg" alt="Floating Image 8" />
         <ScrollIndicator>
           <span>↓</span>
@@ -685,41 +685,41 @@ const Home: React.FC = () => {
             <BodyText>From Shared Voices to a Singular Book</BodyText>
           </SectionHeader>
           <CardContainer>
-            <img 
-              src="imgs/systemdiagram_1.png" 
-              alt="System Flow Diagram I" 
+            <img
+              src="imgs/systemdiagram_1.png"
+              alt="System Flow Diagram I"
               style={{
-                width: '100%',
-                height: 'auto',
-                borderRadius: '1rem',
-                border: '1px solid var(--border-color)',
-                boxShadow: 'var(--shadow-sm)'
+                width: "100%",
+                height: "auto",
+                borderRadius: "1rem",
+                border: "1px solid var(--border-color)",
+                boxShadow: "var(--shadow-sm)",
               }}
             />
           </CardContainer>
           <CardContainer>
-            <img 
-              src="imgs/systemdiagram_2.png" 
-              alt="System Flow Diagram II" 
+            <img
+              src="imgs/systemdiagram_2.png"
+              alt="System Flow Diagram II"
               style={{
-                width: '100%',
-                height: 'auto',
-                borderRadius: '1rem',
-                border: '1px solid var(--border-color)',
-                boxShadow: 'var(--shadow-sm)'
+                width: "100%",
+                height: "auto",
+                borderRadius: "1rem",
+                border: "1px solid var(--border-color)",
+                boxShadow: "var(--shadow-sm)",
               }}
             />
           </CardContainer>
           <CardContainer>
-            <img 
-              src="imgs/systemdiagram_3.png" 
-              alt="System Flow Diagram III" 
+            <img
+              src="imgs/systemdiagram_3.png"
+              alt="System Flow Diagram III"
               style={{
-                width: '100%',
-                height: 'auto',
-                borderRadius: '1rem',
-                border: '1px solid var(--border-color)',
-                boxShadow: 'var(--shadow-sm)'
+                width: "100%",
+                height: "auto",
+                borderRadius: "1rem",
+                border: "1px solid var(--border-color)",
+                boxShadow: "var(--shadow-sm)",
               }}
             />
           </CardContainer>
