@@ -2,40 +2,15 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import matter from "gray-matter";
-
-const PageHeader = styled.div`
-  background: linear-gradient(
-    135deg,
-    var(--primary-color) 0%,
-    var(--secondary-color) 100%
-  );
-  color: white;
-  padding: 8rem 0 4rem;
-  text-align: center;
-`;
-
-const PageTitle = styled.h1`
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-`;
-
-const PageSubtitle = styled.p`
-  font-size: 1.25rem;
-  opacity: 0.9;
-  max-width: 600px;
-  margin: 0 auto;
-`;
-
-const Section = styled.section`
-  padding: 6rem 0;
-`;
-
-const Container = styled.div`
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 2rem;
-`;
+import PageInfo from "../components/PageInfo";
+import {
+  BodyText,
+  CardContainer,
+  Container,
+  Section,
+  SectionHeader,
+  TitleText,
+} from "../components";
 
 const SectionTitle = styled.h2`
   font-size: 2.5rem;
@@ -57,7 +32,7 @@ const BlogGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   margin-bottom: 4rem;
 `;
 
@@ -131,9 +106,10 @@ const BlogDate = styled.span`
 `;
 
 const BlogCategory = styled.span`
-  background: var(--accent-color);
-  color: white;
-  padding: 0.25rem 0.75rem;
+  background: white;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 1rem;
   border-radius: 1rem;
   font-size: 0.75rem;
   font-weight: 500;
@@ -169,7 +145,7 @@ const CategoryButton = styled.button<{ $active: boolean }>`
     props.$active ? "var(--primary-color)" : "var(--bg-primary)"};
   color: ${(props) => (props.$active ? "white" : "var(--text-secondary)")};
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
 
@@ -348,9 +324,9 @@ const Blog: React.FC = () => {
         );
 
         // Set the first post as featured (or handle a specific featured post logic if needed)
-        if (loadedPosts.length > 0) {
-          setFeaturedPost(loadedPosts[0]);
-        }
+        // if (loadedPosts.length > 0) {
+        //   setFeaturedPost(loadedPosts[0]);
+        // }
 
         // Extract unique categories
         const uniqueCategories = new Set(["All Stories"]);
@@ -376,35 +352,26 @@ const Blog: React.FC = () => {
       : posts.filter((post) => post.category === selectedCategory);
 
   if (loading) {
-    return (
-      <PageHeader>
-        <PageTitle>Loading...</PageTitle>
-      </PageHeader>
-    );
+    return <PageInfo title="Loading..." subtitle="" />;
   }
 
   if (error) {
-    return (
-      <PageHeader>
-        <PageTitle>Error</PageTitle>
-        <PageSubtitle>{error}</PageSubtitle>
-      </PageHeader>
-    );
+    return <PageInfo title="Error" subtitle={error} />;
   }
 
   return (
     <>
-      <PageHeader>
-        <PageTitle>Blog</PageTitle>
-        <PageSubtitle>
-          Insights, updates, and stories from the world of AI-powered publishing
-        </PageSubtitle>
-      </PageHeader>
+      <PageInfo
+        title="Blog"
+        subtitle="Insights, updates, and stories from the world of AI-powered publishing"
+      />
 
       {featuredPost && (
         <FeaturedArticleSection>
           <Container>
-            <SectionTitle>Featured Story</SectionTitle>
+            <SectionHeader>
+              <TitleText className="ginto">Featured Story</TitleText>
+            </SectionHeader>
             <FeaturedContent>
               <FeaturedText>
                 <h3>
@@ -450,13 +417,15 @@ const Blog: React.FC = () => {
 
       <Section>
         <Container>
-          <SectionTitle>User Case Studies</SectionTitle>
-          <SectionSubtitle>
-            Real stories from binders & users who have transformed their
-            publishing journey with Bind
-          </SectionSubtitle>
+          <SectionHeader>
+            <TitleText className="ginto">User Case Studies</TitleText>
+            <BodyText>
+              Real stories from binders & users who have transformed their
+              publishing journey with Bind
+            </BodyText>
+          </SectionHeader>
 
-          <CategoryFilter>
+          <CardContainer style={{ justifyContent: "center" }}>
             {categories.map((category) => (
               <CategoryButton
                 key={category}
@@ -466,7 +435,7 @@ const Blog: React.FC = () => {
                 {category}
               </CategoryButton>
             ))}
-          </CategoryFilter>
+          </CardContainer>
 
           <BlogGrid>
             {filteredPosts.map((post) => (
@@ -481,9 +450,9 @@ const Blog: React.FC = () => {
                 <BlogContent>
                   <BlogMeta>
                     <BlogDate>
-                      <span role="img" aria-label="calendar">
+                      {/* <span role="img" aria-label="calendar">
                         🗓️
-                      </span>
+                      </span> */}
                       {new Date(post.date).toLocaleDateString("en-US", {
                         year: "numeric",
                         month: "long",
