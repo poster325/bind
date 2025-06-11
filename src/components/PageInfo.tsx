@@ -7,6 +7,8 @@ interface PageInfoProps {
   subtitle: string;
 }
 
+ 
+
 const PageHeader = styled.div`
   background: linear-gradient(
     135deg,
@@ -22,7 +24,7 @@ const PageHeader = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 11px;
   text-align: center;
 `;
 
