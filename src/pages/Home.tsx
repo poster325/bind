@@ -696,8 +696,8 @@ const Home: React.FC = () => {
                 boxShadow: 'var(--shadow-sm)'
               }}
             />
-          </Cardcontainer>
-          <Cardcontainer>
+          </CardContainer>
+          <CardContainer>
             <img 
               src="imgs/systemdiagram_2.png" 
               alt="System Flow Diagram II" 
@@ -709,8 +709,8 @@ const Home: React.FC = () => {
                 boxShadow: 'var(--shadow-sm)'
               }}
             />
-          </Cardcontainer>
-          <Cardcontainer>
+          </CardContainer>
+          <CardContainer>
             <img 
               src="imgs/systemdiagram_3.png" 
               alt="System Flow Diagram III" 
