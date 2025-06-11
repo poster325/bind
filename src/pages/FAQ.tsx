@@ -1,41 +1,17 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-
-const PageHeader = styled.div`
-  background: linear-gradient(
-    135deg,
-    var(--primary-color) 0%,
-    var(--secondary-color) 100%
-  );
-  color: white;
-  padding: 8rem 0 4rem;
-  text-align: center;
-`;
-
-const PageTitle = styled.h1`
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-`;
-
-const PageSubtitle = styled.p`
-  font-size: 1.25rem;
-  opacity: 0.9;
-  max-width: 600px;
-  margin: 0 auto;
-`;
-
-const Section = styled.section`
-  padding: 6rem 0;
-`;
-
-const Container = styled.div`
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 2rem;
-`;
+import {
+  BodyText,
+  Container,
+  Section,
+  SectionHeader,
+  TitleText,
+} from "../components";
+import PageInfo from "../components/PageInfo";
 
 const TagFilter = styled.div`
+  width: 80%;
+
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -44,19 +20,23 @@ const TagFilter = styled.div`
 `;
 
 const TagButton = styled.button<{ $active: boolean }>`
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem;
   border: 1px solid var(--border-color);
   border-radius: 2rem;
   background: ${(props) =>
     props.$active ? "var(--primary-color)" : "var(--bg-primary)"};
-  color: ${(props) => (props.$active ? "white" : "var(--text-primary)")};
+  color: ${(props) => (props.$active ? "white" : "var(--text-secondary)")};
+  text-decoration: none;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-size: 0.875rem;
 
   &:hover {
     background: ${(props) =>
       props.$active ? "var(--primary-color)" : "var(--bg-accent)"};
+    color: ${(props) => (props.$active ? "white" : "var(--primary-color)")};
+    border-color: ${(props) =>
+      props.$active ? "var(--primary-color)" : "var(--border-color)"};
   }
 `;
 
@@ -277,12 +257,10 @@ const FAQ: React.FC = () => {
 
   return (
     <>
-      <PageHeader>
-        <PageTitle>Frequently Asked Questions</PageTitle>
-        <PageSubtitle>
-          Find answers to common questions about Bind and AI-powered publishing
-        </PageSubtitle>
-      </PageHeader>
+      <PageInfo
+        title="Frequently Asked Questions"
+        subtitle="Find answers to common questions about Bind and AI-powered publishing"
+      />
 
       <Section>
         <Container>
@@ -321,11 +299,14 @@ const FAQ: React.FC = () => {
           </FAQGrid>
 
           <ContactSection>
-            <ContactTitle>Still Have Questions?</ContactTitle>
-            <ContactSubtitle>
-              Our support team is here to help you get started with your
-              publishing journey.
-            </ContactSubtitle>
+            <SectionHeader>
+              <TitleText className="ginto">Still Have Questions?</TitleText>
+              <BodyText>
+                Our support team is here to help you get started with your
+                publishing journey.
+              </BodyText>
+            </SectionHeader>
+
             <ContactCardGrid>
               <ContactCard>
                 <ContactCardIcon>💬</ContactCardIcon>
