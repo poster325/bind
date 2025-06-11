@@ -61,12 +61,12 @@ const FeaturedImageContainer = styled.div`
   overflow: hidden;
   cursor: pointer;
   transition: all 0.3s ease;
-  
+
   &:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
   }
-  
+
   &:hover .overlay {
     opacity: 1;
   }
@@ -91,7 +91,7 @@ const ImageOverlay = styled.div`
   justify-content: center;
   opacity: 0;
   transition: all 0.3s ease;
-  
+
   span {
     color: white;
     font-size: 1.125rem;
@@ -146,11 +146,11 @@ const StatsGrid = styled.div`
   gap: 2rem;
   margin: 3rem 0;
   flex-wrap: nowrap;
-  
+
   @media (max-width: 768px) {
     gap: 1rem;
   }
-  
+
   @media (max-width: 480px) {
     gap: 0.5rem;
   }
@@ -164,11 +164,11 @@ const StatItem = styled.div`
   border: 1px solid var(--border-color);
   flex: 1;
   min-width: 150px;
-  
+
   @media (max-width: 768px) {
     padding: 1.5rem;
   }
-  
+
   @media (max-width: 480px) {
     padding: 1rem;
   }
@@ -187,10 +187,12 @@ const StatLabel = styled.div`
 `;
 
 const SearchSection = styled.div`
-  margin-bottom: 3rem;
+  width: 100%;
+  margin: 2rem 0;
 `;
 
 const SearchBar = styled.div`
+  width: 100%;
   position: relative;
   max-width: 600px;
   margin: 0 auto;
@@ -429,6 +431,14 @@ const Portfolio: React.FC = () => {
               Get to know the talented writers and creators who bring their
               unique perspectives and expertise to our platform.
             </BodyText>
+            <CaptionText style={{ opacity: 0.6 }}>
+              Please note that the detailed information of each binder is
+              currently a placeholder,
+              <br />
+              as our system has not officially launched yet.{" "}
+              <Link to="/signup">Join our mailing list </Link>
+              to receive updates and announcements.
+            </CaptionText>
           </SectionHeader>
 
           <SearchSection>
