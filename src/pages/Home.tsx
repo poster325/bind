@@ -1,6 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import {
+  BodyText,
+  CaptionText,
+  FlexBox,
+  SubtitleText,
+  TitleText,
+} from "../components";
 
 const Hero = styled.section`
   /* background: linear-gradient(
@@ -39,7 +46,7 @@ const HeroContent = styled.div`
 
 const HighlightSVG = styled.img`
   position: absolute;
-  top: 0; /* Adjust as needed */
+  top: 10%; /* Adjust as needed */
   right: 0; /* Adjust as needed */
   width: 65%; /* Adjust size to cover the title */
   max-width: 600px; /* Max width to match title line length */
@@ -345,28 +352,23 @@ const Section = styled.section<SectionProps>`
 `;
 
 const Container = styled.div`
-  max-width: 1400px;
+  max-width: 1300px;
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
   margin: 0 auto;
   padding: 0 2rem;
 `;
 
 const SectionHeader = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
   text-align: center;
-  margin-bottom: 4rem;
-`;
-
-const SectionTitle = styled.h2`
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 1rem;
-`;
-
-const SectionSubtitle = styled.p`
-  font-size: 1.125rem;
-  color: var(--text-secondary);
-  max-width: 600px;
-  margin: 0 auto;
 `;
 
 const TwoColumn = styled.div`
@@ -374,6 +376,7 @@ const TwoColumn = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+  justify-content: flex-start;
   margin-top: 3rem;
 
   @media (max-width: 768px) {
@@ -382,47 +385,15 @@ const TwoColumn = styled.div`
   }
 `;
 
-const ContentBlock = styled.div`
-  h3 {
-    font-size: 1.875rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-    color: var(--text-primary);
-  }
+const FeatureList = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
 
-  p {
-    font-size: 1.125rem;
-    color: var(--text-secondary);
-    line-height: 1.7;
-    margin-bottom: 1.5rem;
-  }
-`;
-
-const FeatureList = styled.ul`
-  list-style: none;
-  margin-top: 1.5rem;
-
-  li {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 0.75rem;
-    color: var(--text-secondary);
-
-    &::before {
-      content: "✓";
-      background: var(--accent-color);
-      color: white;
-      width: 1.25rem;
-      height: 1.25rem;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.75rem;
-      font-weight: bold;
-    }
-  }
+  box-sizing: border-box;
+  padding-left: 12px;
 `;
 
 const ImagePlaceholder = styled.div`
@@ -439,6 +410,8 @@ const ImagePlaceholder = styled.div`
 `;
 
 const ImagePlaceholderLarge = styled.div`
+  flex: 1 1 auto;
+
   background: var(--bg-accent);
   border: 2px dashed var(--border-color);
   border-radius: 1rem;
@@ -452,23 +425,35 @@ const ImagePlaceholderLarge = styled.div`
 `;
 
 const CardGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.4rem;
+
+  box-sizing: border-box;
+  padding: 3rem 0;
 
   @media (max-width: 768px) {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 `;
 
 const Card = styled.div`
+  flex: 1 1 auto;
   background: var(--bg-primary);
   border: 1px solid var(--border-color);
   border-radius: 1rem;
+
+  box-sizing: border-box;
   padding: 2rem;
   transition: all 0.3s ease;
   box-shadow: var(--shadow-sm);
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 
   &:hover {
     transform: translateY(-4px);
@@ -485,24 +470,14 @@ const CardIcon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.5rem;
   color: white;
   font-size: 1.5rem;
-`;
 
-const CardTitle = styled.h3`
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: var(--text-primary);
-`;
-
-const CardText = styled.p`
-  color: var(--text-secondary);
-  line-height: 1.6;
+  margin-bottom: 4px;
 `;
 
 const StepsContainer = styled.div`
+  width: 800px;
   position: relative;
   margin-top: 3rem;
 `;
@@ -526,20 +501,6 @@ const StepNumber = styled.div`
   font-weight: 700;
   font-size: 1.125rem;
   flex-shrink: 0;
-`;
-
-const StepContent = styled.div`
-  h4 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: var(--text-primary);
-  }
-
-  p {
-    color: var(--text-secondary);
-    line-height: 1.6;
-  }
 `;
 
 const Home: React.FC = () => {
@@ -581,67 +542,70 @@ const Home: React.FC = () => {
       <Section id="intro">
         <Container>
           <SectionHeader>
-            <SectionTitle>What is Bind?</SectionTitle>
-            <SectionSubtitle>
-              Bind transforms the traditional publishing process by shifting
-              focus from single-author narratives to shared memory storytelling.
-            </SectionSubtitle>
+            <TitleText className="ginto">What is Bind?</TitleText>
+            <BodyText>
+              Bind transforms the traditional publishing process
+              <br />
+              by shifting focus from single-author narratives to shared memory
+              storytelling.
+            </BodyText>
           </SectionHeader>
 
           <TwoColumn>
-            <ContentBlock>
-              <h3>Remembering Together</h3>
-              <p>
+            <FlexBox gap={12}>
+              <SubtitleText>Remembering Together</SubtitleText>
+              <BodyText>
                 Through conversational data, photos, and emotional fragments,
                 Bind helps groups reflect on a year of their collaborative
                 memories.
-              </p>
+              </BodyText>
               <FeatureList>
-                <li>
-                  Shared memories become the foundation, not a single author's
+                <CaptionText>
+                  • Shared memories become the foundation, not a single author's
                   voice
-                </li>
-                <li>
-                  Each book is a one-year time capsule, co-written by those who
-                  lived through it
-                </li>
-                <li>
-                  AI helps structure stories, but the tone stays deeply personal
-                </li>
-                <li>
-                  Participants receive a beautifully made, emotionally rich book
-                  that feels truly theirs
-                </li>
+                </CaptionText>
+                <CaptionText>
+                  • Each book is a one-year time capsule, co-written by those
+                  who lived through it
+                </CaptionText>
+                <CaptionText>
+                  • AI helps structure stories, but the tone stays deeply
+                  personal
+                </CaptionText>
+                <CaptionText>
+                  • Participants receive a beautifully made, emotionally rich
+                  book that feels truly theirs
+                </CaptionText>
               </FeatureList>
-            </ContentBlock>
+            </FlexBox>
             <ImagePlaceholder>Platform Interface Preview</ImagePlaceholder>
           </TwoColumn>
 
           <CardGrid>
             <Card>
               <CardIcon>📚</CardIcon>
-              <CardTitle>Multi-perspective Collection</CardTitle>
-              <CardText>
+              <BodyText bold={true}>Multi-perspective Collection</BodyText>
+              <CaptionText>
                 Bind supports guided memory collection from multiple
                 participants through structured interviews designed by the
                 binder.
-              </CardText>
+              </CaptionText>
             </Card>
             <Card>
               <CardIcon>🤖</CardIcon>
-              <CardTitle>Organizing Narrative with AI</CardTitle>
-              <CardText>
+              <BodyText bold={true}>Organizing Narrative with AI</BodyText>
+              <CaptionText>
                 An AI system helps organize, group, and structure raw memory
                 fragments with a consistent tone.
-              </CardText>
+              </CaptionText>
             </Card>
             <Card>
               <CardIcon>🎯</CardIcon>
-              <CardTitle>Design Tailored for Memory</CardTitle>
-              <CardText>
+              <BodyText bold={true}>Design Tailored for Memory</BodyText>
+              <CaptionText>
                 Through design choices in tone and visuals, each book is
                 tailored to the emotional truth of its contributors.
-              </CardText>
+              </CaptionText>
             </Card>
           </CardGrid>
         </Container>
@@ -650,60 +614,66 @@ const Home: React.FC = () => {
       <Section $bgColor="var(--bg-secondary)">
         <Container>
           <SectionHeader>
-            <SectionTitle>Who Can Use Bind?</SectionTitle>
-            <SectionSubtitle>
+            <TitleText className="ginto">Who Can Use Bind?</TitleText>
+            <BodyText>
               Bind is for those who want to reflect, remember, and reimagine
               their experiences together.
-            </SectionSubtitle>
+            </BodyText>
           </SectionHeader>
 
           <CardGrid>
             <Card>
               <CardIcon>👨‍👩‍👧‍👦</CardIcon>
-              <CardTitle>Families</CardTitle>
-              <CardText>
+              <BodyText bold={true}>Families</BodyText>
+              <CaptionText>
                 Parents, siblings, and children recalling a year of everyday
                 life
-              </CardText>
+              </CaptionText>
             </Card>
             <Card>
               <CardIcon>🎉</CardIcon>
-              <CardTitle>Friend Groups</CardTitle>
-              <CardText>
+              <BodyText bold={true}>Friend Groups</BodyText>
+              <CaptionText>
                 Turning everyday photos and jokes into a meaningful record
-              </CardText>
+              </CaptionText>
             </Card>
             <Card>
               <CardIcon>🎓</CardIcon>
-              <CardTitle>School Colleagues</CardTitle>
-              <CardText>
+              <BodyText bold={true}>School Colleagues</BodyText>
+              <CaptionText>
                 Commemorating a shared journey of school life or graduation
-              </CardText>
+              </CaptionText>
             </Card>
             <Card>
               <CardIcon>🎸</CardIcon>
-              <CardTitle>Student Clubs</CardTitle>
-              <CardText>
+              <BodyText bold={true}>Student Clubs</BodyText>
+              <CaptionText>
                 Bandmates or project teams preserving behind-the-scenes emotions
-              </CardText>
+              </CaptionText>
             </Card>
           </CardGrid>
 
           <TwoColumn style={{ marginTop: "4rem" }}>
             <ImagePlaceholder>Diagram</ImagePlaceholder>
-            <ContentBlock>
-              <h3>What is a Binder?</h3>
-              <p>
+            <FlexBox gap={12}>
+              <SubtitleText>What is a Binder?</SubtitleText>
+              <BodyText>
                 A Binder is the creative lead of a Bind book project, shaping
                 how a book of shared memories takes form.
-              </p>
+              </BodyText>
               <FeatureList>
-                <li>Composes the overall narrative flow</li>
-                <li>Designs the user interview structure</li>
-                <li>Directs AI in real time based on input</li>
-                <li>Curates the content & Shapes final tone</li>
+                <CaptionText>• Composes the overall narrative flow</CaptionText>
+                <CaptionText>
+                  • Designs the user interview structure
+                </CaptionText>
+                <CaptionText>
+                  • Directs AI in real time based on input
+                </CaptionText>
+                <CaptionText>
+                  • Curates the content & Shapes final tone
+                </CaptionText>
               </FeatureList>
-            </ContentBlock>
+            </FlexBox>
           </TwoColumn>
         </Container>
       </Section>
@@ -711,73 +681,73 @@ const Home: React.FC = () => {
       <Section>
         <Container>
           <SectionHeader>
-            <SectionTitle>How Bind Works</SectionTitle>
-            <SectionSubtitle>
+            <TitleText className="ginto">How Bind Works</TitleText>
+            <BodyText>
               Bind turns memory into a collaborative book through structured
               dialogue, AI-assisted writing, and personalized curation.
-            </SectionSubtitle>
+            </BodyText>
           </SectionHeader>
 
           <StepsContainer>
             <StepItem>
               <StepNumber>1</StepNumber>
-              <StepContent>
-                <h4>Choose Your Binder</h4>
-                <p>
+              <FlexBox gap={4}>
+                <SubtitleText>Choose Your Binder</SubtitleText>
+                <BodyText>
                   Pick a Binder who fits your group's vibe, based on the
                   portfolio & autobiography. They will shape the structure,
                   tone, and the visual design of the book.
-                </p>
-              </StepContent>
+                </BodyText>
+              </FlexBox>
             </StepItem>
 
             <StepItem>
               <StepNumber>2</StepNumber>
-              <StepContent>
-                <h4>1st Interaction</h4>
-                <p>
+              <FlexBox gap={4}>
+                <SubtitleText>1st Interaction</SubtitleText>
+                <BodyText>
                   The main customer works as an initiator, and goes through a
                   simple conversation with the Binder. Overall needs and
                   intentions are shared for the Binder to design structures of
                   next steps
-                </p>
-              </StepContent>
+                </BodyText>
+              </FlexBox>
             </StepItem>
 
             <StepItem>
               <StepNumber>3</StepNumber>
-              <StepContent>
-                <h4>2nd Interaction</h4>
-                <p>
+              <FlexBox gap={4}>
+                <SubtitleText>2nd Interaction</SubtitleText>
+                <BodyText>
                   Each participant answers guided questions through a chat.
                   Stories, emotional fragments and photos are collected, helping
                   AI and the Binder understand your shared year.
-                </p>
-              </StepContent>
+                </BodyText>
+              </FlexBox>
             </StepItem>
 
             <StepItem>
               <StepNumber>4</StepNumber>
-              <StepContent>
-                <h4>3rd Interaction</h4>
-                <p>
+              <FlexBox gap={4}>
+                <SubtitleText>3rd Interaction</SubtitleText>
+                <BodyText>
                   Binder and AI collaborate to turn memories into complete
                   chapters. Binders monitor the entire process, directing the
                   tone, structure, and content.
-                </p>
-              </StepContent>
+                </BodyText>
+              </FlexBox>
             </StepItem>
 
             <StepItem>
               <StepNumber>5</StepNumber>
-              <StepContent>
-                <h4>Receive Your Book</h4>
-                <p>
+              <FlexBox gap={4}>
+                <SubtitleText>Receive Your Book</SubtitleText>
+                <BodyText>
                   After correction, layout formatting, and book design,
                   participants receive a beautifully printed, memory-rich book
                   truly of their own.
-                </p>
-              </StepContent>
+                </BodyText>
+              </FlexBox>
             </StepItem>
           </StepsContainer>
         </Container>
@@ -786,24 +756,20 @@ const Home: React.FC = () => {
       <Section>
         <Container>
           <SectionHeader>
-            <SectionTitle>System Workflow</SectionTitle>
-            <SectionSubtitle>
-              From Shared Voices to a Singular Book
-            </SectionSubtitle>
+            <TitleText className="ginto">System Workflow</TitleText>
+            <BodyText>From Shared Voices to a Singular Book</BodyText>
           </SectionHeader>
-          <p>
+          <CardGrid>
             <ImagePlaceholderLarge>System Flow Diagram I</ImagePlaceholderLarge>
-          </p>
-          <p>
             <ImagePlaceholderLarge>
               System Flow Diagram II
             </ImagePlaceholderLarge>
-          </p>
-          <p>
+          </CardGrid>
+          <CardGrid>
             <ImagePlaceholderLarge>
               System Flow Diagram III
             </ImagePlaceholderLarge>
-          </p>
+          </CardGrid>
         </Container>
       </Section>
     </>
