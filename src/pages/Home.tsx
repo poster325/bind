@@ -4,7 +4,13 @@ import { Link } from "react-router-dom";
 import {
   BodyText,
   CaptionText,
+  CardContainer,
+  CardIcon,
+  CardItem,
+  Container,
   FlexBox,
+  Section,
+  SectionHeader,
   SubtitleText,
   TitleText,
 } from "../components";
@@ -342,35 +348,6 @@ const FloatingImage = styled.img`
   }
 `;
 
-interface SectionProps {
-  $bgColor?: string;
-}
-
-const Section = styled.section<SectionProps>`
-  padding: 6rem 0;
-  background-color: ${(props) => props.$bgColor || "transparent"};
-`;
-
-const Container = styled.div`
-  max-width: 1300px;
-  width: 80%;
-
-  display: flex;
-  flex-direction: column;
-
-  align-items: center;
-  margin: 0 auto;
-  padding: 0 2rem;
-`;
-
-const SectionHeader = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-
-  text-align: center;
-`;
-
 const TwoColumn = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -422,58 +399,6 @@ const ImagePlaceholderLarge = styled.div`
   color: var(--text-light);
   font-size: 1.125rem;
   font-weight: 500;
-`;
-
-const CardGrid = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 1.4rem;
-
-  box-sizing: border-box;
-  padding: 3rem 0;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
-`;
-
-const Card = styled.div`
-  flex: 1 1 auto;
-  background: var(--bg-primary);
-  border: 1px solid var(--border-color);
-  border-radius: 1rem;
-
-  box-sizing: border-box;
-  padding: 2rem;
-  transition: all 0.3s ease;
-  box-shadow: var(--shadow-sm);
-
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--accent-color);
-  }
-`;
-
-const CardIcon = styled.div`
-  width: 3rem;
-  height: 3rem;
-  background: var(--accent-color);
-  border-radius: 0.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 1.5rem;
-
-  margin-bottom: 4px;
 `;
 
 const StepsContainer = styled.div`
@@ -581,8 +506,8 @@ const Home: React.FC = () => {
             <ImagePlaceholder>Platform Interface Preview</ImagePlaceholder>
           </TwoColumn>
 
-          <CardGrid>
-            <Card>
+          <CardContainer>
+            <CardItem>
               <CardIcon>📚</CardIcon>
               <BodyText bold={true}>Multi-perspective Collection</BodyText>
               <CaptionText>
@@ -590,24 +515,24 @@ const Home: React.FC = () => {
                 participants through structured interviews designed by the
                 binder.
               </CaptionText>
-            </Card>
-            <Card>
+            </CardItem>
+            <CardItem>
               <CardIcon>🤖</CardIcon>
               <BodyText bold={true}>Organizing Narrative with AI</BodyText>
               <CaptionText>
                 An AI system helps organize, group, and structure raw memory
                 fragments with a consistent tone.
               </CaptionText>
-            </Card>
-            <Card>
+            </CardItem>
+            <CardItem>
               <CardIcon>🎯</CardIcon>
               <BodyText bold={true}>Design Tailored for Memory</BodyText>
               <CaptionText>
                 Through design choices in tone and visuals, each book is
                 tailored to the emotional truth of its contributors.
               </CaptionText>
-            </Card>
-          </CardGrid>
+            </CardItem>
+          </CardContainer>
         </Container>
       </Section>
 
@@ -621,37 +546,37 @@ const Home: React.FC = () => {
             </BodyText>
           </SectionHeader>
 
-          <CardGrid>
-            <Card>
+          <CardContainer>
+            <CardItem>
               <CardIcon>👨‍👩‍👧‍👦</CardIcon>
               <BodyText bold={true}>Families</BodyText>
               <CaptionText>
                 Parents, siblings, and children recalling a year of everyday
                 life
               </CaptionText>
-            </Card>
-            <Card>
+            </CardItem>
+            <CardItem>
               <CardIcon>🎉</CardIcon>
               <BodyText bold={true}>Friend Groups</BodyText>
               <CaptionText>
                 Turning everyday photos and jokes into a meaningful record
               </CaptionText>
-            </Card>
-            <Card>
+            </CardItem>
+            <CardItem>
               <CardIcon>🎓</CardIcon>
               <BodyText bold={true}>School Colleagues</BodyText>
               <CaptionText>
                 Commemorating a shared journey of school life or graduation
               </CaptionText>
-            </Card>
-            <Card>
+            </CardItem>
+            <CardItem>
               <CardIcon>🎸</CardIcon>
               <BodyText bold={true}>Student Clubs</BodyText>
               <CaptionText>
                 Bandmates or project teams preserving behind-the-scenes emotions
               </CaptionText>
-            </Card>
-          </CardGrid>
+            </CardItem>
+          </CardContainer>
 
           <TwoColumn style={{ marginTop: "4rem" }}>
             <ImagePlaceholder>Diagram</ImagePlaceholder>
@@ -759,17 +684,17 @@ const Home: React.FC = () => {
             <TitleText className="ginto">System Workflow</TitleText>
             <BodyText>From Shared Voices to a Singular Book</BodyText>
           </SectionHeader>
-          <CardGrid>
+          <CardContainer>
             <ImagePlaceholderLarge>System Flow Diagram I</ImagePlaceholderLarge>
             <ImagePlaceholderLarge>
               System Flow Diagram II
             </ImagePlaceholderLarge>
-          </CardGrid>
-          <CardGrid>
+          </CardContainer>
+          <CardContainer>
             <ImagePlaceholderLarge>
               System Flow Diagram III
             </ImagePlaceholderLarge>
-          </CardGrid>
+          </CardContainer>
         </Container>
       </Section>
     </>
