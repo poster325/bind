@@ -436,7 +436,7 @@ const Portfolio: React.FC = () => {
               <SearchIcon>🔍</SearchIcon>
               <SearchInput
                 type="text"
-                placeholder="Search binders by name, title, or tags..."
+                placeholder="Search binders by name, tags..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
