@@ -4,7 +4,11 @@ import styled from "styled-components";
 import { getArticleById, Article } from "../utils/markdownParser";
 
 const PageHeader = styled.section`
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  );
   color: white;
   padding: 4rem 0 2rem;
 `;
@@ -85,21 +89,33 @@ const MainContent = styled.div`
     color: var(--text-primary);
     font-size: 1.125rem;
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       color: var(--text-primary);
       margin: 2rem 0 1rem;
       font-weight: 600;
     }
 
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.5rem; }
-    h3 { font-size: 1.25rem; }
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    h3 {
+      font-size: 1.25rem;
+    }
 
     p {
       margin-bottom: 1.5rem;
     }
 
-    ul, ol {
+    ul,
+    ol {
       margin: 1rem 0;
       padding-left: 2rem;
     }
@@ -127,7 +143,7 @@ const MainContent = styled.div`
     a {
       color: var(--primary-color);
       text-decoration: none;
-      
+
       &:hover {
         text-decoration: underline;
       }
@@ -181,12 +197,12 @@ const ArticleDetail: React.FC = () => {
   useEffect(() => {
     const loadArticle = async () => {
       if (!id) return;
-      
+
       try {
         const articleData = await getArticleById(id);
         setArticle(articleData);
       } catch (error) {
-        console.error('Failed to load article:', error);
+        console.error("Failed to load article:", error);
       } finally {
         setLoading(false);
       }
@@ -198,53 +214,62 @@ const ArticleDetail: React.FC = () => {
   // Proper markdown to HTML conversion
   const formatContent = (content: string) => {
     let html = content;
-    
+
     // Headers
-    html = html.replace(/^### (.*$)/gm, '<h3>$1</h3>');
-    html = html.replace(/^## (.*$)/gm, '<h2>$1</h2>');
-    html = html.replace(/^# (.*$)/gm, '<h1>$1</h1>');
-    
+    html = html.replace(/^### (.*$)/gm, "<h3>$1</h3>");
+    html = html.replace(/^## (.*$)/gm, "<h2>$1</h2>");
+    html = html.replace(/^# (.*$)/gm, "<h1>$1</h1>");
+
     // Bold text
-    html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-    
+    html = html.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+
     // Italic text
-    html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
-    
+    html = html.replace(/\*(.*?)\*/g, "<em>$1</em>");
+
     // Blockquotes
-    html = html.replace(/^> (.*$)/gm, '<blockquote>$1</blockquote>');
-    
+    html = html.replace(/^> (.*$)/gm, "<blockquote>$1</blockquote>");
+
     // Lists
-    html = html.replace(/^- (.*$)/gm, '<li>$1</li>');
-    html = html.replace(/(<li>.*<\/li>)/gs, '<ul>$1</ul>');
-    
+    html = html.replace(/^- (.*$)/gm, "<li>$1</li>");
+    html = html.replace(/(<li>.*<\/li>)/gs, "<ul>$1</ul>");
+
     // Links
-    html = html.replace(/\[([^\]]+)\]\(([^\)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
-    
+    html = html.replace(
+      /\[([^\]]+)\]\(([^\)]+)\)/g,
+      '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>'
+    );
+
     // Line breaks and paragraphs
-    html = html.replace(/\n\n/g, '</p><p>');
-    html = html.replace(/\n/g, '<br>');
-    
+    html = html.replace(/\n\n/g, "</p><p>");
+    html = html.replace(/\n/g, "<br>");
+
     // Wrap in paragraphs if not already wrapped
-    if (!html.startsWith('<')) {
-      html = '<p>' + html + '</p>';
+    if (!html.startsWith("<")) {
+      html = "<p>" + html + "</p>";
     }
-    
+
     // Clean up multiple paragraph tags
-    html = html.replace(/<\/p><p>/g, '</p>\n<p>');
-    html = html.replace(/<p><h/g, '<h');
-    html = html.replace(/<\/h([1-6])><\/p>/g, '</h$1>');
-    html = html.replace(/<p><ul>/g, '<ul>');
-    html = html.replace(/<\/ul><\/p>/g, '</ul>');
-    html = html.replace(/<p><blockquote>/g, '<blockquote>');
-    html = html.replace(/<\/blockquote><\/p>/g, '</blockquote>');
-    
+    html = html.replace(/<\/p><p>/g, "</p>\n<p>");
+    html = html.replace(/<p><h/g, "<h");
+    html = html.replace(/<\/h([1-6])><\/p>/g, "</h$1>");
+    html = html.replace(/<p><ul>/g, "<ul>");
+    html = html.replace(/<\/ul><\/p>/g, "</ul>");
+    html = html.replace(/<p><blockquote>/g, "<blockquote>");
+    html = html.replace(/<\/blockquote><\/p>/g, "</blockquote>");
+
     return html;
   };
 
   if (loading) {
     return (
       <Container>
-        <div style={{ padding: "4rem 0", textAlign: "center", color: "var(--text-secondary)" }}>
+        <div
+          style={{
+            padding: "4rem 0",
+            textAlign: "center",
+            color: "var(--text-secondary)",
+          }}
+        >
           Loading article...
         </div>
       </Container>
@@ -272,7 +297,9 @@ const ArticleDetail: React.FC = () => {
             <div className="meta">
               <span className="author">By {article.author}</span>
               <span>•</span>
-              <span className="date">{new Date(article.publishDate).toLocaleDateString()}</span>
+              <span className="date">
+                {new Date(article.publishDate).toLocaleDateString()}
+              </span>
               <span className="read-time">{article.readTime}</span>
             </div>
           </ArticleHeader>
@@ -283,9 +310,11 @@ const ArticleDetail: React.FC = () => {
         <Container>
           <ContentGrid>
             <MainContent>
-              <div 
-                className="content" 
-                dangerouslySetInnerHTML={{ __html: formatContent(article.content) }}
+              <div
+                className="content"
+                dangerouslySetInnerHTML={{
+                  __html: formatContent(article.content),
+                }}
               />
             </MainContent>
 
@@ -311,4 +340,4 @@ const ArticleDetail: React.FC = () => {
   );
 };
 
-export default ArticleDetail; 
+export default ArticleDetail;

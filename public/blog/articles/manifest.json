@@ -1,3 +1,8 @@
 {
-  "files": ["getting-started-with-ai-writing.md", "the-future-of-publishing.md", "polyphia-redefining-instrumental-music.md"]
+  "files": [
+    "getting-started-with-ai-writing.md",
+    "the-future-of-publishing.md",
+    "article1.md",
+    "article1-en.md"
+  ]
 }

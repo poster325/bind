@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import styled from "styled-components";
+import rehypeRaw from "rehype-raw";
 
 const Container = styled.div`
   max-width: 800px;
@@ -23,7 +24,7 @@ const BackLink = styled(Link)`
 `;
 
 const PostHeader = styled.header`
-  margin-bottom: 3rem;
+  margin: 3rem 0;
   text-align: center;
 `;
 
@@ -113,6 +114,7 @@ const PostContent = styled.div`
   font-size: 1.125rem;
   line-height: 1.8;
   color: var(--text-primary);
+  margin-bottom: 10rem;
 
   h1,
   h2,
@@ -227,7 +229,7 @@ interface BlogPostProps {
 const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
   return (
     <Container>
-      <BackLink to="/blog">← Back to Blog</BackLink>
+      {/* <BackLink to="/blog">← Back to Blog</BackLink> */}
 
       <PostHeader>
         <PostMeta>
@@ -237,7 +239,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
         </PostMeta>
 
         <PostTitle>{post.title}</PostTitle>
-        <PostExcerpt>{post.excerpt}</PostExcerpt>
+        {/* <PostExcerpt>{post.excerpt}</PostExcerpt> */}
 
         <AuthorInfo>
           <AuthorAvatar>{post.author.avatar}</AuthorAvatar>
@@ -255,7 +257,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
       )}
 
       <PostContent>
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+        <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>
           {post.content}
         </ReactMarkdown>
       </PostContent>
