@@ -14,6 +14,7 @@ const Nav = styled.div`
 
 const NavContainer = styled.div`
   max-width: 1400px;
+  height: 80px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -137,9 +138,7 @@ const Navbar: React.FC = () => {
             </NavLink>
           </NavItem>
         </NavMenu>
-        <GetStartedButton
-          onClick={() => handleNavigation("/signup")}
-        >
+        <GetStartedButton onClick={() => handleNavigation("/signup")}>
           Get Started
         </GetStartedButton>
       </NavContainer>

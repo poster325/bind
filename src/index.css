@@ -10,6 +10,29 @@
   font-display: swap;
 }
 
+/* 전체 스크롤바 영역 */
+::-webkit-scrollbar {
+  width: 8px; /* 세로 스크롤바 너비 */
+  height: 8px; /* 가로 스크롤바 높이 */
+}
+
+/* 스크롤바 트랙(배경) */
+::-webkit-scrollbar-track {
+  background: none;
+  border-radius: 4px;
+}
+
+/* 스크롤바 핸들(움직이는 부분) */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+/* 마우스 호버 시 */
+::-webkit-scrollbar-thumb:hover {
+  opacity: 0.8;
+}
+
 :root {
   --primary-color: #121212;
   --secondary-color: #f1e1ff;
@@ -51,8 +74,6 @@ body {
 * {
   box-sizing: border-box;
 }
-
-
 
 a {
   color: var(--primary-color);

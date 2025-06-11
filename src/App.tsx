@@ -14,6 +14,7 @@ import FAQ from "./pages/FAQ";
 
 const AppContainer = styled.div`
   min-height: 100vh;
+  width: 100%;
   background: var(--bg-primary);
   color: var(--text-primary);
 `;

@@ -3,23 +3,35 @@ import styled from "styled-components";
 import { submitToMailList } from "../utils/emailService";
 
 const PageContainer = styled.div`
-  min-height: 100vh;
-  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  height: 100vh;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  );
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+
+  box-sizing: border-box;
+  padding: 0 2rem;
+  padding-top: 80px;
 `;
 
 const ContentCard = styled.div`
   background: var(--bg-primary);
   border-radius: 2rem;
-  padding: 4rem;
-  max-width: 600px;
+  padding: 1rem 3.5rem 2rem 3.5rem;
+
+  max-width: 800px;
   width: 100%;
+  height: calc(100% - 100px);
+
   box-shadow: var(--shadow-lg);
   border: 1px solid var(--border-color);
   text-align: center;
+
+  overflow-y: auto;
 
   @media (max-width: 768px) {
     padding: 2rem;
@@ -43,7 +55,7 @@ const Message = styled.div`
   font-size: 1.125rem;
   line-height: 1.7;
   color: var(--text-secondary);
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
   text-align: left;
 
   p {
@@ -144,7 +156,10 @@ const SubmitButton = styled.button`
 `;
 
 const SuccessMessage = styled.div`
-  background: #10b981;
+  width: 100%;
+  background: black;
+
+  justify-self: flex-end;
   color: white;
   padding: 1.5rem;
   border-radius: 0.75rem;
@@ -165,42 +180,44 @@ const MailList: React.FC = () => {
   const [email, setEmail] = useState("");
   const [consent, setConsent] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!email || !consent) {
       setErrorMessage("Please fill in your email and agree to the consent.");
-      setSubmitStatus('error');
+      setSubmitStatus("error");
       return;
     }
 
     setIsSubmitting(true);
-    setSubmitStatus('idle');
+    setSubmitStatus("idle");
 
     try {
       const submissionData = {
         email,
         consent,
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
       };
 
       const result = await submitToMailList(submissionData);
 
       if (result.success) {
-        setSubmitStatus('success');
+        setSubmitStatus("success");
         setEmail("");
         setConsent(false);
       } else {
         setErrorMessage(result.message);
-        setSubmitStatus('error');
+        setSubmitStatus("error");
       }
     } catch (error) {
-      console.error('Error sending email:', error);
+      console.error("Error sending email:", error);
       setErrorMessage("Something went wrong. Please try again.");
-      setSubmitStatus('error');
+      setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
     }
@@ -209,70 +226,98 @@ const MailList: React.FC = () => {
   return (
     <PageContainer>
       <ContentCard>
-        <Title>Hey there! 🙌</Title>
-        
-        <Message>
-          <p>Thank you so much for being interested in what we're building – it really means a lot to us. 🤍</p>
-          
-          <p>We're getting everything ready behind the scenes, and when the big moment comes, we want you to be the first to know! 🚀</p>
-          
-          <p>Just leave your email below and give us a quick yes to collecting your info (just for this launch update — pinky promise 🤞).</p>
-          
-          <p>We'll only use it to send you one lovely email when we go live. No spam. No weird stuff. Ever.</p>
-          
-          <p>Talk soon,</p>
-          
-          <p className="signature">Team Bind 🧵</p>
-        </Message>
+        <div
+          style={{
+            width: "100%",
+            minHeight: "100%",
+            height: "fit-content",
+            display: "flex",
+            flexDirection: "column",
+            alignContent: "flex-start",
+            justifyContent: "flex-start",
+          }}
+        >
+          <Title>Hey there! 🙌</Title>
 
-        {submitStatus === 'success' ? (
-          <SuccessMessage>
-            🎉 Thank you! You're all signed up. We'll let you know the moment we launch!
-          </SuccessMessage>
-        ) : (
-          <Form onSubmit={handleSubmit}>
-            <InputGroup>
-              <Label htmlFor="email">Email Address:</Label>
-              <Input
-                id="email"
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="your@email.com"
-                required
-              />
-            </InputGroup>
+          <Message>
+            <p>
+              Thank you so much for being interested in what we're building – it
+              really means a lot to us. 🤍
+            </p>
+            <p>
+              We're getting everything ready behind the scenes, and when the big
+              moment comes, we want you to be the first to know! 🚀
+            </p>
 
-            <CheckboxGroup>
-              <Checkbox
-                id="consent"
-                type="checkbox"
-                checked={consent}
-                onChange={(e) => setConsent(e.target.checked)}
-                required
-              />
-              <CheckboxLabel htmlFor="consent">
-                <strong>Consent to Personal Data Collection</strong> - I agree to the collection and use of my personal information (email address) for the purpose of receiving a one-time product launch notification.
-              </CheckboxLabel>
-            </CheckboxGroup>
+            <p>
+              Just leave your email below and give us a quick yes to collecting
+              your info (just for this launch update — pinky promise 🤞).
+            </p>
 
-            <SubmitButton 
-              type="submit" 
-              disabled={!email || !consent || isSubmitting}
-            >
-              {isSubmitting ? 'Signing you up...' : 'Count me in! 🚀'}
-            </SubmitButton>
+            <p>
+              We'll only use it to send you one lovely email when we go live. No
+              spam. No weird stuff. Ever.
+            </p>
 
-            {submitStatus === 'error' && (
-              <ErrorMessage>
-                {errorMessage}
-              </ErrorMessage>
-            )}
-          </Form>
-        )}
+            <p>
+              Talk soon,
+              <p style={{ display: "inline-block" }} className="signature">
+                Team Bind 🧵
+              </p>
+            </p>
+          </Message>
+
+          {submitStatus === "success" ? (
+            <SuccessMessage>
+              🎉 Thank you! You're all signed up. We'll let you know the moment
+              we launch!
+            </SuccessMessage>
+          ) : (
+            <Form onSubmit={handleSubmit}>
+              <InputGroup>
+                <Label htmlFor="email">Email Address:</Label>
+                <Input
+                  id="email"
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="your@email.com"
+                  required
+                />
+              </InputGroup>
+
+              <CheckboxGroup>
+                <Checkbox
+                  id="consent"
+                  type="checkbox"
+                  checked={consent}
+                  onChange={(e) => setConsent(e.target.checked)}
+                  required
+                />
+                <CheckboxLabel htmlFor="consent">
+                  <strong>Consent to Personal Data Collection</strong> - I agree
+                  to the collection and use of my personal information (email
+                  address) for the purpose of receiving a one-time product
+                  launch notification.
+                </CheckboxLabel>
+              </CheckboxGroup>
+
+              <SubmitButton
+                type="submit"
+                disabled={!email || !consent || isSubmitting}
+              >
+                {isSubmitting ? "Signing you up..." : "Count me in! 🚀"}
+              </SubmitButton>
+
+              {submitStatus === "error" && (
+                <ErrorMessage>{errorMessage}</ErrorMessage>
+              )}
+            </Form>
+          )}
+        </div>
       </ContentCard>
     </PageContainer>
   );
 };
 
-export default MailList; 
+export default MailList;
