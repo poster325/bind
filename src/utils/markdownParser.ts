@@ -503,19 +503,19 @@ export async function loadArticles(): Promise<Article[]> {
     const manifestContent = await fetchFile('/content/articles/manifest.json');
     const manifest = JSON.parse(manifestContent);
     console.log('Articles manifest:', manifest);
-    
+
     const articles: Article[] = [];
-    
+
     // Load each article file
     for (const item of manifest) {
       try {
         console.log(`Loading article: ${item.file}`);
         const fileContent = await fetchFile(`/content/articles/${item.file}`);
-        
+
         // Parse frontmatter and content using gray-matter (same as blog system)
         const { data: frontmatter, content } = matter(fileContent);
         console.log('Article frontmatter:', frontmatter);
-        
+
         articles.push({
           id: frontmatter.id || item.id,
           title: frontmatter.title || 'Untitled',
@@ -532,7 +532,7 @@ export async function loadArticles(): Promise<Article[]> {
         console.warn(`Failed to load article: ${item.file}`, error);
       }
     }
-    
+
     console.log('Loaded articles:', articles);
     return articles;
   } catch (error) {
@@ -549,19 +549,19 @@ export async function loadBinders(): Promise<Binder[]> {
     const manifestContent = await fetchFile('/content/binders/manifest.json');
     const manifest = JSON.parse(manifestContent);
     console.log('Binders manifest:', manifest);
-    
+
     const binders: Binder[] = [];
-    
+
     // Load each binder file
     for (const item of manifest) {
       try {
         console.log(`Loading binder: ${item.file}`);
         const fileContent = await fetchFile(`/content/binders/${item.file}`);
-        
+
         // Parse frontmatter and content using gray-matter (same as blog system)
         const { data: frontmatter, content } = matter(fileContent);
         console.log('Binder frontmatter:', frontmatter);
-        
+
         binders.push({
           id: frontmatter.id || item.id,
           name: frontmatter.name || 'Unknown',
@@ -581,7 +581,7 @@ export async function loadBinders(): Promise<Binder[]> {
         console.warn(`Failed to load binder: ${item.file}`, error);
       }
     }
-    
+
     console.log('Loaded binders:', binders);
     return binders;
   } catch (error) {
