@@ -349,8 +349,8 @@ const FloatingImage = styled.img`
 `;
 
 const TwoColumn = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
   gap: 4rem;
   align-items: center;
   justify-content: center;
