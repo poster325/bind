@@ -61,8 +61,8 @@ The project taught us that the most meaningful stories aren't just about what ha
   {
     id: "sustainable-publishing",
     title: "Sustainable Publishing in the Digital Era",
-    author: "Marcus Rodriguez",
-    authorBio: "Environmental consultant and author specializing in climate fiction and sustainable practices",
+    author: "Park",
+    authorBio: "Poet & Emotional Interpreter specializing in poetic binding through unintended emotional recall",
     publishDate: "2023-11-10",
     readTime: "12 min read",
     tags: ["Sustainability", "Publishing", "Environment", "Green Technology"],
@@ -260,125 +260,119 @@ I love connecting with fellow storytellers and creative minds. Feel free to reac
 _"Stories shape our world, and technology shapes our stories. Let's create something amazing together."_ - Sarah Chen`
   },
   {
-    id: "marcus-rodriguez",
-    name: "Marcus Rodriguez",
-    title: "Sustainable Publishing Advocate",
-    avatar: "/images/binders/marcus-rodriguez.jpg",
-    location: "Portland, OR",
-    joinedDate: "2023-01-20",
-    tags: ["Sustainability", "Environment", "Green Tech", "Climate Fiction", "Environmental Science"],
-    specialties: ["Climate Fiction", "Environmental Journalism", "Green Technology"],
-    languages: ["English", "Spanish", "Portuguese"],
+    id: "park",
+    name: "Park",
+    title: "Poet & Emotional Interpreter",
+    avatar: "/images/binders/park.jpg",
+    location: "Seoul, South Korea",
+    joinedDate: "2024-02-15",
+    tags: ["Poetry", "Emotional Recall", "Family Stories", "Memory", "Gentle Workflow"],
+    specialties: ["Poetic Binding", "Emotional Interpretation", "Memory Facilitation"],
+    languages: ["Korean", "English"],
     social: {
-      website: "https://sustainablestories.org",
-      twitter: "@marcus_eco_stories",
-      linkedin: "marcus-rodriguez-sustainability"
+      website: "https://park-poetry.kr",
+      twitter: "@park_poet",
+      linkedin: "park-emotional-interpreter"
     },
     stats: {
-      booksPublished: 8,
-      totalReads: "32.1K",
+      booksPublished: 1,
+      totalReads: "4 Voices",
       rating: 4.9,
-      followers: 890
+      followers: 320
     },
     featured: true,
-    content: `# Meet Marcus Rodriguez
+    content: `# Meet Park
 
 ## About Me
 
-I'm Marcus Rodriguez, an environmental consultant turned author who combines scientific expertise with compelling storytelling to address our planet's most pressing challenges. Through my writing, I strive to make environmental issues accessible, engaging, and actionable for readers worldwide.
+I'm Park, a poet and emotional interpreter who specializes in transforming scattered memories into meaningful narratives through gentle, unstructured recall. Based in Seoul, I help people rediscover the emotional threads that connect their experiences, particularly focusing on family stories and intergenerational bonds.
 
 ## My Mission
 
-As a writer, my mission is to bridge the gap between complex environmental science and public understanding. I believe that stories have the power to inspire change, foster empathy, and drive meaningful action toward a more sustainable future.
+My mission is to help people reconnect with their emotional memories through gentle, poetic interpretation. I believe that our most profound stories emerge not from structured interviews, but from the unexpected moments when memories surface naturally, often triggered by simple objects or sensations.
 
-### Background & Credentials
+### Background & Approach
 
-- **M.S. Environmental Science** - Oregon State University (2015)
-- **B.S. Biology** - University of California, Davis (2013)
-- **Environmental Consultant** - 6 years in renewable energy sector
-- **Certified Climate Reality Leader** - The Climate Reality Project (2019)
+- **Poetry & Literature** - Self-taught through years of personal writing
+- **Family Story Specialist** - Focus on intergenerational narratives
+- **Gentle Workflow Practitioner** - Using phone galleries and 5-keyword method
+- **Emotional Recall Facilitator** - Helping clients access unintended memories
 
-## What I Write About
+## What I Specialize In
 
 My work focuses on three core areas:
 
-### Climate Fiction (Cli-Fi)
+### Poetic Binding
 
-Stories that explore climate change through human experiences:
+Transforming scattered memories into cohesive narratives through:
 
-- Near-future scenarios grounded in climate science
-- Character-driven narratives about adaptation and resilience
-- Hope-based storytelling that inspires action
+- Gentle, unstructured conversation techniques
+- Phone gallery exploration as memory triggers
+- 5-keyword emotional mapping method
+- Poetic interpretation of everyday moments
 
-### Environmental Journalism
+### Family Story Facilitation
 
-Investigative pieces and explainers covering:
+Helping families preserve their intergenerational bonds:
 
-- Renewable energy developments
-- Corporate sustainability practices
-- Policy analysis and environmental justice
-- Emerging green technologies
+- Multi-perspective narrative development
+- Emotional thread identification across generations
+- Cultural and personal heritage preservation
+- Gentle conflict resolution through shared storytelling
 
-### Educational Content
+### Unintended Emotional Recall
 
-Making science accessible through:
+Accessing deeper memories through:
 
-- Interactive guides to environmental concepts
-- Case studies of successful sustainability initiatives
-- Practical guides for eco-friendly living
+- Sensory trigger identification
+- Spontaneous memory capture techniques
+- Emotional landscape mapping
+- Transforming unexpected recollections into meaningful narratives
 
-## My Writing Philosophy
+## My Philosophy
 
-> "The best environmental stories don't just inform—they transform. They help readers see themselves as part of the solution."
+> "The most beautiful stories emerge not from what we plan to remember, but from what we accidentally rediscover. Every family photo holds a universe of untold emotions."
 
 I believe in:
 
-- **Science-Based Storytelling**: Grounding fiction in solid research
-- **Optimistic Realism**: Acknowledging challenges while highlighting solutions
-- **Cultural Sensitivity**: Recognizing diverse perspectives on environmental issues
-- **Action-Oriented Narrative**: Stories that empower readers to make a difference
+- **Gentle Approach**: Never forcing memories, but creating space for them to surface
+- **Emotional Authenticity**: Honoring the true feelings behind each memory
+- **Intergenerational Wisdom**: Recognizing how stories connect across generations
+- **Poetic Interpretation**: Finding the deeper meaning in everyday moments
 
-## Featured Publications
+## Featured Project
 
-### "The Last Glacier" (2023)
+### "Mother, Father, Daughter" (2025)
 
-A cli-fi novel following three generations of a family affected by glacial retreat:
+A multi-perspective family narrative exploring four viewpoints through five emotional themes:
 
-- Meticulously researched climate science
-- Multi-perspective narrative spanning 50 years
-- Winner of the 2023 Green Book Award
-- Translated into 8 languages
+- **4 Perspectives**: Mother, Father, Daughter, and Extended Family
+- **5 Themes**: Taiwan, Health, Food, Scenery, Family
+- **Gentle Workflow**: Using phone galleries as memory triggers
+- **Poetic Interpretation**: Transforming everyday moments into profound insights
 
-### "Renewable Futures: A Visual Guide" (2023)
+#### The Process
 
-An interactive digital book exploring clean energy:
+Working with this family, I discovered how the same memories held different emotional weights for each person. Through my 5-keyword method and gentle phone gallery exploration, we uncovered:
 
-- Augmented reality demonstrations of renewable technologies
-- Real-time data integration from global energy sources
-- Collaborative content with leading climate scientists
-- Featured in MIT Technology Review
-
-### "Seeds of Change" (2022)
-
-A collection of short stories about environmental activism:
-
-- Stories from 6 different countries and cultures
-- Focuses on youth climate leaders
-- Proceeds donated to reforestation projects
-- Adapted into a podcast series
+- **Taiwan**: How homeland memories shaped family identity
+- **Health**: The unspoken fears and hopes around aging parents
+- **Food**: Recipes as vessels for cultural transmission
+- **Scenery**: How places hold the essence of family moments
+- **Family**: The complex web of love, duty, and individual dreams
 
 ## Let's Connect
 
-I'm always eager to collaborate with:
+I'm always ready to help families and individuals who want to:
 
-- Fellow environmental writers and journalists
-- Climate scientists looking to communicate their research
-- Publishers interested in sustainability content
-- Activists and organizations working on environmental solutions
+- Preserve their family stories through gentle exploration
+- Transform scattered memories into meaningful narratives
+- Explore the emotional threads that connect generations
+- Discover the poetry hidden in everyday family moments
 
 ---
 
-_"Every story we tell about the environment is a story about ourselves. Let's make sure they're stories of hope, action, and positive change."_ - Marcus Rodriguez`
+_"Every family photo is a doorway to a story waiting to be told. Let me help you find the key."_ - Park`
   },
   {
     id: "elena-vasquez",
