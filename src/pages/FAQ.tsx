@@ -187,61 +187,61 @@ const FAQ: React.FC = () => {
       question: "What is Bind?",
       answer:
         "Bind is a collaborative book-making system that transforms shared memories into printed books using AI and human direction.",
-      tags: ["general", "platform"],
+      tags: ["about"],
     },
     {
       question: "Who creates the content of the book?",
       answer:
         "The participants provide memory fragments through conversation, and the AI organizes them. A human 'Binder' then curates the final narrative.",
-      tags: ["process", "binder"],
+      tags: ["process"],
     },
     {
       question: "What makes Bind different from traditional publishing?",
       answer:
         "Instead of a single author, Bind captures the voices of multiple people — focusing on emotional depth, memory, and reflection.",
-      tags: ["general", "unique"],
+      tags: ["about"],
     },
     {
       question: "Is Bind only for personal memories?",
       answer:
         "No. While many books are personal, Bind can be used for any shared experience — teams, projects, relationships, or even events.",
-      tags: ["usage", "scope"],
+      tags: ["usage"],
     },
     {
       question: "How is AI used in the process?",
       answer:
         "AI helps structure, group, and generate drafts from collected data. It doesn't invent — it organizes what's already been expressed.",
-      tags: ["ai", "process"],
+      tags: ["process"],
     },
     {
       question: "What does a Binder do?",
       answer:
         "A Binder is like a director. They help shape the tone, ask better questions, and refine the final output into a coherent book.",
-      tags: ["binder", "role"],
+      tags: ["process"],
     },
     {
       question: "Can I use Bind with people who aren't tech-savvy?",
       answer:
         "Yes. The system is designed to be guided — through voice, chat, or assisted interviews — so anyone can participate.",
-      tags: ["accessibility", "features"],
+      tags: ["usage"],
     },
     {
       question: "What format is the final book?",
       answer:
         "A high-quality printed paper book — designed for emotional resonance, longevity, and physical beauty.",
-      tags: ["format", "output"],
+      tags: ["output"],
     },
     {
       question: "Is Bind only for yearbooks?",
       answer:
         "No. Yearbooks are just one format. Bind supports memory books of all kinds — memorials, childhood collections, travel logs, and more.",
-      tags: ["scope", "formats"],
+      tags: ["usage"],
     },
     {
       question: "Who owns the final content?",
       answer:
         "The contributors. Bind does not claim ownership of your memories or stories. Your book is entirely yours.",
-      tags: ["ownership", "rights"],
+      tags: ["legal"],
     },
   ];
 

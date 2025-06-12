@@ -678,53 +678,7 @@ const Home: React.FC = () => {
         </Container>
       </Section>
 
-      <Section>
-        <Container>
-          <SectionHeader>
-            <TitleText className="ginto">System Workflow</TitleText>
-            <BodyText>From Shared Voices to a Singular Book</BodyText>
-          </SectionHeader>
-          <CardContainer>
-            <img
-              src="imgs/systemdiagram_1.png"
-              alt="System Flow Diagram I"
-              style={{
-                width: "100%",
-                height: "auto",
-                borderRadius: "1rem",
-                border: "1px solid var(--border-color)",
-                boxShadow: "var(--shadow-sm)",
-              }}
-            />
-          </CardContainer>
-          <CardContainer>
-            <img
-              src="imgs/systemdiagram_2.png"
-              alt="System Flow Diagram II"
-              style={{
-                width: "100%",
-                height: "auto",
-                borderRadius: "1rem",
-                border: "1px solid var(--border-color)",
-                boxShadow: "var(--shadow-sm)",
-              }}
-            />
-          </CardContainer>
-          <CardContainer>
-            <img
-              src="imgs/systemdiagram_3.png"
-              alt="System Flow Diagram III"
-              style={{
-                width: "100%",
-                height: "auto",
-                borderRadius: "1rem",
-                border: "1px solid var(--border-color)",
-                boxShadow: "var(--shadow-sm)",
-              }}
-            />
-          </CardContainer>
-        </Container>
-      </Section>
+
     </>
   );
 };
