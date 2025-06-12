@@ -37,18 +37,25 @@ const BackgroundContent = styled.div`
 const BackgroundImage = styled.div`
   flex: 1 1 0;
 
-  background: linear-gradient(
-    135deg,
-    var(--accent-color) 0%,
-    var(--primary-color) 100%
-  );
+  background: url('/imgs/inspiration.png') center center/cover;
   border-radius: 1rem;
   height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  font-size: 4rem;
+  position: relative;
+
+  /* Add a subtle overlay for better text readability if needed */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+  }
 `;
 
 const ValuesGrid = styled.div`
@@ -184,7 +191,7 @@ const About = () => {
                 We began with a question: How will the paper book publishing
                 system change in an age of AI? As AI accelerates the speed of
                 content creation, the act of making a book is no longer a
-                technical challenge, but it’s a curatorial one.
+                technical challenge, but it's a curatorial one.
               </CaptionText>
               <CaptionText>
                 In this new landscape, we believe the physical book must evolve.
@@ -201,7 +208,7 @@ const About = () => {
                 voices, and held with care.
               </CaptionText>
             </FlexBox>
-            <BackgroundImage>📚</BackgroundImage>
+            <BackgroundImage></BackgroundImage>
           </BackgroundContent>
 
           <CardContainer>
