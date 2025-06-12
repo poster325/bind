@@ -11,6 +11,7 @@ import MailList from "./pages/MailList";
 import Blog from "./pages/Blog";
 import BlogPostLoader from "./components/BlogPostLoader";
 import FAQ from "./pages/FAQ";
+import PDFReader from "./pages/PDFReader";
 
 const AppContainer = styled.div`
   min-height: 100vh;
@@ -34,6 +35,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:postId" element={<BlogPostLoader />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/pdf/:id" element={<PDFReader />} />
         </Routes>
       </AppContainer>
     </Router>

@@ -411,7 +411,7 @@ const Portfolio: React.FC = () => {
                   ))}
                 </Tags>
               </FeaturedContent>
-              <Link to={`/article/${article.id}`}>
+              <Link to={`/pdf/${article.id}`}>
                 <FeaturedImageContainer>
                   <FeaturedImage src={portfolioImgs[i]} alt={article.title} />
                   <ImageOverlay className="overlay">
