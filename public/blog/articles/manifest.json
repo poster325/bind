@@ -1,8 +1,3 @@
 {
-  "files": [
-    "getting-started-with-ai-writing.md",
-    "the-future-of-publishing.md",
-    "article1.md",
-    "article1-en.md"
-  ]
+  "files": ["article1.md", "article2.md", "article1-en.md", "article2-en.md"]
 }
