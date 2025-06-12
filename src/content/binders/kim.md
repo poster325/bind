@@ -2,7 +2,7 @@
 id: "kim"
 name: "Kim"
 title: "Story Crafter of Emotional Highs"
-avatar: "/images/binders/kim.jpg"
+avatar: "/imgs/kim.jpg"
 location: "Daejeon, South Korea"
 joinedDate: "2024-01-10"
 tags:

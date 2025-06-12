@@ -2,7 +2,7 @@
 id: "park"
 name: "Park"
 title: "Poet & Emotional Interpreter"
-avatar: "/images/binders/park.jpg"
+avatar: "/imgs/park.jpg"
 location: "Seoul, South Korea"
 joinedDate: "2024-02-15"
 tags:
