@@ -320,7 +320,7 @@ const Blog: React.FC = () => {
 
         // Sort posts by date (newest first)
         loadedPosts.sort(
-          (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+          (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
         );
 
         // Set the first post as featured (or handle a specific featured post logic if needed)
