@@ -1,81 +1,108 @@
 ---
+id: "kim"
 name: "Kim"
 title: "Story Crafter of Emotional Highs"
+avatar: "/images/binders/kim.jpg"
 location: "Daejeon, South Korea"
-bio: "I transform life's precious moments into emotionally resonant narratives, specializing in capturing the spirit of youth and community through thoughtful storytelling that honors both individual experiences and collective memories."
-avatar: "/imgs/avatars/kim.jpg"
-background: "From organizing university events to crafting personalized stories, I believe every moment contains a story worth telling. My approach focuses on weaving emotional threads that connect past experiences with present meaning, creating narratives that celebrate growth, friendship, and the beautiful chaos of young adulthood."
-approach: "I use emotion-focused techniques to help clients rediscover the joy and significance in their experiences. Through careful listening and creative interpretation, I help transform scattered memories into cohesive, meaningful stories that capture not just what happened, but how it felt to live through those moments."
-portfolio:
-  featuredProject:
-    title: "Twenties Dream: 2024"
-    description: "A heartwarming chronicle of university band members' journey through their final year"
-    participants: 7
-    themes: ["Friendship", "Music", "Growth", "Dreams", "Youth"]
-  specialties:
-    ["Emotion-Focused Storytelling", "Youth Narratives", "Community Stories"]
-  languages: ["Korean", "English"]
-  social:
-    {
-      instagram: "kim_story_crafter",
-      twitter: "kimstories",
-      linkedin: "kim-story-crafter",
-    }
-  stats:
-    { booksPublished: 1, totalReads: "7 Lives", rating: 4.8, followers: 245 }
-  featured: true
+joinedDate: "2024-01-10"
+tags:
+  [
+    "Scene-Driven",
+    "Empathetic",
+    "Emotion-Focused",
+    "Fiction Writing",
+    "Memory Curation",
+  ]
+specialties:
+  ["Emotional Storytelling", "Scene-Based Narratives", "Memory Curation"]
+languages: ["Korean", "English"]
+social:
+  {
+    website: "https://kim-stories.kr",
+    instagram: "@kim_binder",
+    email: "kim@bind.com",
+  }
+stats:
+  {
+    booksPublished: 1,
+    totalReads: "7 Contributors",
+    rating: 5.0,
+    followers: 150,
+  }
+featured: true
 ---
 
-# Kim's Story Crafting Philosophy
+# Meet Binder Kim
 
-## The Heart of Every Story
+## About Me
 
-Every person carries within them a collection of moments that shaped who they are. My role is to help you discover the emotional threads that connect these moments and transform them into a narrative that truly reflects your journey.
+I'm Kim, a fiction writer based in Daejeon who builds stories around emotion, not just events. As a Binder, I guide people to uncover personal truths and emotional turning points hidden in everyday moments. My goal is to curate memory-based stories that feel both cinematic and deeply human.
 
-## Featured Project: Twenties Dream
+## My Approach
 
-### The Vision
+I treat every book like a narrative, with rising tension, a meaningful climax, and emotional closure. I begin not with a timeline, but with the heart of the story — a moment of impact — and build from there. When gathering memories, I focus on relationship dynamics, emotional shifts, and lived perspectives rather than just facts.
 
-"Twenties Dream: 2024" emerged from the simple desire to capture the essence of a university band's final year together. What started as seven individual stories became a beautiful tapestry of shared dreams, late-night rehearsals, and the bittersweet beauty of endings that are also beginnings.
+## Binder Mission
 
-### The Process
+To discover each group's unique emotional arc, and to translate those invisible bonds into a shared memory artifact. I believe the best stories are not told — they are recalled, felt, and shaped through deep listening.
 
-Working with seven band members, I discovered that their individual stories were incomplete without each other. Through emotion-focused interviews and creative workshops, we uncovered:
+## Featured Project
 
-- **Shared Dreams**: How music brought seven strangers together
-- **Growth Moments**: The challenges that strengthened their bond
-- **Hidden Depths**: Personal struggles and victories that shaped their sound
-- **Future Hopes**: Where their individual paths might lead
+### "Twenties Dream: 2024"
 
-### The Impact
+A story-driven yearbook for a university band navigating passion, burnout, and friendship.
 
-The final narrative celebrates not just their music, but the profound ways they influenced each other's lives. Each member received their own chapter, but the real magic happened in the spaces between—where their stories intertwined.
+**Project Details:**
 
-## My Approach to Emotional Storytelling
+- 7 participants (band members and close friends)
+- Interviews guided around emotional climax, inter-member dynamics, and personal turning points
+- Intentionally avoids dry chronological edits in favor of immersive narrative pacing
+- Designed to capture raw moments and relational growth
 
-### Deep Listening
+## My Workflow as a Binder
 
-I believe that the most important stories often live in the pauses between words. My process begins with creating a safe space where clients feel comfortable sharing not just what happened, but how it felt.
+### 🧭 Climax-Oriented Structure
 
-### Emotional Mapping
+I begin from what each person feels is the most emotionally intense moment, then work backwards to make the story meaningful.
 
-Every story has an emotional landscape. I help clients identify the peaks and valleys of their experiences, understanding how different emotions connect to create the overall narrative arc.
+### 🎭 Character Through Connection
 
-### Collaborative Creation
+I explore how each member relates to others — who they felt close to, distanced from, or changed by.
 
-Your story is yours to tell. I serve as a guide and craftsperson, helping you find the words and structure that best express your unique experience.
+### 💡 Emotion Over Facts
 
-## Why Emotion-Focused Storytelling?
+I don't ask everyone to recall everything. Some give timeline structure, others offer texture through feelings and perspective.
 
-Traditional narratives often focus on events and facts. While these are important, I believe the emotional truth of an experience is what makes a story truly resonate. By centering emotions, we create narratives that:
+### 🧵 Story from Fragments
 
-- Connect deeply with readers
-- Honor the full complexity of human experience
-- Transform painful memories into sources of strength
-- Celebrate the beauty in everyday moments
+I connect casual voice memos, texts, and conversation into a scene-based narrative with emotional logic.
 
-## Working Together
+### 🤖 AI as Sketch Partner
 
-If you're ready to transform your experiences into a meaningful narrative, I'd love to help you discover the story that's waiting to be told. Whether it's a group project like "Twenties Dream" or a deeply personal journey, every story deserves to be crafted with care and emotional honesty.
+I imagine an AI that not only listens, but sketches: generating visuals, capturing tone, and helping us feel the scene together.
 
-_Ready to begin your story? Let's start with a conversation about what matters most to you._
+## Binder Philosophy
+
+> "The best stories are not told — they are recalled, felt, and shaped through deep listening."
+
+I believe in:
+
+- **Emotional Truth**: Finding the real story beneath the surface events
+- **Relational Depth**: Understanding how people connect and change each other
+- **Scene-Based Thinking**: Building narratives around powerful moments
+- **Collaborative Creation**: Working with AI as a creative partner
+
+## Why Work With Me
+
+If you're looking for a binder who will:
+
+- Find the emotional core of your shared experiences
+- Create a narrative that feels like a compelling story, not just a chronicle
+- Focus on relationships and personal growth rather than just events
+- Use innovative AI tools to enhance the storytelling process
+
+Then let's create something meaningful together.
+
+---
+
+_"Memory is not just what happened — it's how we felt, how we changed, and how we connected."_ - Kim
