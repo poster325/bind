@@ -324,7 +324,6 @@ const Portfolio: React.FC = () => {
   const portfolioImgs = [
     "imgs/portfolio-feature1.png",
     "imgs/book2-cover.png",
-    "imgs/portfolio-feature1.png",
   ];
 
   useEffect(() => {
