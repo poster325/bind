@@ -353,7 +353,7 @@ const TwoColumn = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   margin-top: 3rem;
 
   @media (max-width: 768px) {
@@ -373,20 +373,16 @@ const FeatureList = styled.div`
   padding-left: 12px;
 `;
 
-const ImagePlaceholder = styled.div`
-  background: var(--bg-accent);
-  border: 2px dashed var(--border-color);
-  border-radius: 1rem;
+const Figure = styled.img`
+  width: auto;
   height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-light);
-  font-size: 1.125rem;
-  font-weight: 500;
+  object-fit: cover;
+
+  background: var(--bg-accent);
+  border-radius: 1rem;
 `;
 
-const ImagePlaceholderLarge = styled.div`
+const FigureLarge = styled.div`
   flex: 1 1 auto;
 
   background: var(--bg-accent);
@@ -503,7 +499,7 @@ const Home: React.FC = () => {
                 </CaptionText>
               </FeatureList>
             </FlexBox>
-            <ImagePlaceholder>Platform Interface Preview</ImagePlaceholder>
+            <Figure src="/imgs/home-figure1.png" />
           </TwoColumn>
 
           <CardContainer>
@@ -579,7 +575,7 @@ const Home: React.FC = () => {
           </CardContainer>
 
           <TwoColumn style={{ marginTop: "4rem" }}>
-            <ImagePlaceholder>Diagram</ImagePlaceholder>
+            <Figure src="/imgs/article1-cover.png" />
             <FlexBox gap={12}>
               <SubtitleText>What is a Binder?</SubtitleText>
               <BodyText>
@@ -677,8 +673,6 @@ const Home: React.FC = () => {
           </StepsContainer>
         </Container>
       </Section>
-
-
     </>
   );
 };
