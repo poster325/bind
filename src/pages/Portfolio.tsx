@@ -32,7 +32,7 @@ const FeaturedItem = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
   }
-
+g
   &:nth-child(even) {
     direction: rtl;
   }
@@ -323,7 +323,7 @@ const Portfolio: React.FC = () => {
 
   const portfolioImgs = [
     "imgs/portfolio-feature1.png",
-    "imgs/portfolio-feature1.png",
+    "imgs/book2-cover.png",
     "imgs/portfolio-feature1.png",
   ];
 

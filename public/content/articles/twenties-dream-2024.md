@@ -1,6 +1,6 @@
 ---
 id: "twenties-dream-2024"
-title: "Twenties Dream 2024"
+title: "티디를 풀어서 부르자면"
 author: "Kim"
 authorBio: "Amateur fiction writer and binder of the project"
 publishDate: "2024-01-15"
@@ -11,7 +11,7 @@ excerpt: "A collective yearbook capturing the dreams, bonds, and emotions of a l
 featured: true
 ---
 
-# Twenties Dream 2024
+# 티디를 풀어서 부르자면
 
 What started as a simple idea to document our university band's final year together became something much more profound—a collective yearbook that captures not just our music, but the dreams, bonds, and raw emotions that defined our twenties.
 

@@ -1,6 +1,6 @@
 ---
 id: "mother-father-daughter"
-title: "Mother, Father, Daughter: A Poetic Journey Through Family Memory"
+title: "시제: 엄마, 아빠, 딸"
 author: "Park"
 authorBio: "Poet & Emotional Interpreter specializing in poetic binding through unintended emotional recall"
 publishDate: "2025-01-10"
@@ -17,7 +17,7 @@ excerpt: "Exploring how gentle memory work can transform scattered family moment
 featured: true
 ---
 
-# Mother, Father, Daughter: A Poetic Journey Through Family Memory
+# 시제: 엄마, 아빠, 딸
 
 When a family approached me to help preserve their shared memories, I discovered that the most profound stories emerge not from structured interviews, but from the gentle spaces where memory naturally surfaces. "Mother, Father, Daughter" became a testament to the power of unintended emotional recall.
 
