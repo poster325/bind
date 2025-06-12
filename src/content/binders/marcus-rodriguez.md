@@ -1,184 +1,129 @@
 ---
-id: "marcus-rodriguez"
-name: "Marcus Rodriguez"
-title: "Sustainable Publishing Advocate"
-avatar: "/images/binders/marcus-rodriguez.jpg"
-location: "Portland, OR"
-joinedDate: "2023-01-20"
+id: "park"
+name: "Park"
+title: "Poet & Emotional Interpreter"
+avatar: "/images/binders/park.jpg"
+location: "Seoul, South Korea"
+joinedDate: "2024-02-15"
 tags:
   [
-    "Sustainability",
-    "Environment",
-    "Green Tech",
-    "Climate Fiction",
-    "Environmental Science",
+    "Poetry",
+    "Emotional Recall",
+    "Memory Curation",
+    "Unstructured Process",
+    "Family Stories",
   ]
-specialties: ["Climate Fiction", "Environmental Journalism", "Green Technology"]
-languages: ["English", "Spanish", "Portuguese"]
+specialties:
+  ["Poetic Binding", "Emotional Interpretation", "Memory Facilitation"]
+languages: ["Korean", "English"]
 social:
   {
-    website: "https://sustainablestories.org",
-    twitter: "@marcus_eco_stories",
-    linkedin: "marcus-rodriguez-sustainability",
+    website: "https://park-poetry.kr",
+    twitter: "@park_poet",
+    linkedin: "park-emotional-interpreter",
   }
-stats: { booksPublished: 8, totalReads: "32.1K", rating: 4.9, followers: 890 }
+stats:
+  { booksPublished: 1, totalReads: "4 Voices", rating: 4.9, followers: 320 }
 featured: true
 ---
 
-# Meet Marcus Rodriguez
+# Meet Park
 
 ## About Me
 
-I'm Marcus Rodriguez, an environmental consultant turned author who combines scientific expertise with compelling storytelling to address our planet's most pressing challenges. Through my writing, I strive to make environmental issues accessible, engaging, and actionable for readers worldwide.
+I'm Park, a poet and emotional interpreter who believes that the most honest memories emerge when we're not forcing them. I specialize in creating space for unintended emotional recall, allowing stories to surface naturally through gentle atmosphere and suggestive flow rather than direct questioning.
 
-## My Mission
+## My Approach
 
-As a writer, my mission is to bridge the gap between complex environmental science and public understanding. I believe that stories have the power to inspire change, foster empathy, and drive meaningful action toward a more sustainable future.
+I prefer not to lead with direct questions, but to draw out stories through gentle atmosphere and suggestive flow ("What happened then?" rather than "How did you feel?"). I encourage participants to speak first, letting memory surface without prompt, while maintaining a calm, respectful, and unrushed tone.
 
-### Background & Credentials
+## Binder Philosophy
 
-- **M.S. Environmental Science** - Oregon State University (2015)
-- **B.S. Biology** - University of California, Davis (2013)
-- **Environmental Consultant** - 6 years in renewable energy sector
-- **Certified Climate Reality Leader** - The Climate Reality Project (2019)
+> "Memory gains honesty when it is unplanned, and the poet's role is to hold space rather than direct."
 
-## What I Write About
+I believe that:
 
-My work focuses on three core areas:
+- **Unstructured Recall** creates more authentic emotional truth
+- **Gentle Guidance** yields deeper insights than direct interrogation
+- **Poetic Interpretation** can capture what plain narrative cannot
+- **Family Voices** deserve equal space and respect
 
-### Climate Fiction (Cli-Fi)
+## My Workflow
 
-Stories that explore climate change through human experiences:
+### 🌸 Gentle Atmosphere Creation
 
-- Near-future scenarios grounded in climate science
-- Character-driven narratives about adaptation and resilience
-- Hope-based storytelling that inspires action
+I start by creating a calm, unrushed environment where memories can surface naturally without pressure or structure.
 
-### Environmental Journalism
+### 📱 Memory Triggers
 
-Investigative pieces and explainers covering:
+I guide participants through their phone gallery chronologically, or by handling physical keepsakes to trigger memories passively.
 
-- Renewable energy developments
-- Corporate sustainability practices
-- Policy analysis and environmental justice
-- Emerging green technologies
+### 🗝️ Keyword Collection
 
-### Educational Content
+After recall, I ask each participant to suggest five keywords that feel most important, gathering both their order of appearance and personal ranking.
 
-Making science accessible through:
+### 📖 Story Gathering
 
-- Interactive guides to environmental concepts
-- Case studies of successful sustainability initiatives
-- Practical guides for eco-friendly living
+I collect honest, concrete stories based on each keyword while minimizing verbal direction to reduce bias. The participant remains the narrator.
 
-## My Writing Philosophy
+## Featured Project
 
-> "The best environmental stories don't just inform—they transform. They help readers see themselves as part of the solution."
+### "Mother, Father, Daughter" (2025)
 
-I believe in:
+A poetry collection capturing shared family memories from four perspectives — mother, father, daughter, and the poet — centered on five themes: Taiwan, Health, Food, Scenery, and Family.
 
-- **Science-Based Storytelling**: Grounding fiction in solid research
-- **Optimistic Realism**: Acknowledging challenges while highlighting solutions
-- **Cultural Sensitivity**: Recognizing diverse perspectives on environmental issues
-- **Action-Oriented Narrative**: Stories that empower readers to make a difference
+**Project Details:**
 
-## Featured Publications
+- **4 Voices:** Mother, Father, Daughter, and Poet perspectives
+- **5 Themes:** Taiwan, Health, Food, Scenery, Family
+- **Raw Fragments:** Preserves fragmentary emotions rather than finalized narratives
+- **Emotional Truth:** Maintained through unstructured recall process
+- **Lyrical Memory:** Ordinary moments transformed into poetry
 
-### "The Last Glacier" (2023)
+### My Role as Binder
 
-A cli-fi novel following three generations of a family affected by glacial retreat:
+In this project, my role was to maintain emotional truth, balancing nuance and silence across voices. By avoiding interrogation and inviting spontaneous recollection, I allowed ordinary moments to bloom into lyrical memory.
 
-- Meticulously researched climate science
-- Multi-perspective narrative spanning 50 years
-- Winner of the 2023 Green Book Award
-- Translated into 8 languages
+## Data Collection Philosophy
 
-### "Renewable Futures: A Visual Guide" (2023)
+### Phase 1: Passive Triggering
 
-An interactive digital book exploring clean energy:
+- Use phone galleries or physical objects as memory triggers
+- Avoid ordering events or focusing on facts initially
+- Foster unstructured recall process
 
-- Augmented reality demonstrations of renewable technologies
-- Real-time data integration from global energy sources
-- Collaborative content with leading climate scientists
-- Featured in MIT Technology Review
+### Phase 2: Keyword Gathering
 
-### "Seeds of Change" (2022)
+- Request 5 important keywords from each participant
+- Collect both appearance order and personal ranking
+- Let participants define what feels significant
 
-A collection of short stories about environmental activism:
+### Phase 3: Story Collection
 
-- Stories from 6 different countries and cultures
-- Focuses on youth climate leaders
-- Proceeds donated to reforestation projects
-- Adapted into a podcast series
+- Gather concrete stories based on keywords
+- Minimize verbal direction to reduce bias
+- Maintain participant as narrator
 
-## Expertise & Research Areas
+## Why Work With Me
 
-**Environmental Focus:**
+If you're looking for a binder who will:
 
-- Climate Change Mitigation
-- Renewable Energy Systems
-- Sustainable Agriculture
-- Ocean Conservation
-- Environmental Policy
+- **Honor authentic emotion** over polished narrative
+- **Create safe space** for vulnerable memory sharing
+- **Transform fragments** into poetic coherence
+- **Respect all voices** equally in family or group dynamics
+- **Work patiently** without rushing the recall process
 
-**Writing Specialties:**
-
-- Science Communication
-- Narrative Non-fiction
-- Climate Fiction
-- Technical Writing
-- Grant Writing
-
-## Community Involvement
-
-I'm actively involved in environmental and literary communities:
-
-- **Co-founder** - Portland Climate Writers Collective
-- **Advisory Board Member** - National Climate Fiction Society
-- **Mentor** - Young Environmental Writers Program
-- **Speaker** - Regular presenter at climate communication conferences
-
-## Current Research & Projects
-
-🌱 **"Carbon Stories" Series** - Documenting successful carbon capture initiatives
-🌊 **Ocean Rising Trilogy** - A three-book cli-fi series about sea-level rise
-📚 **Environmental Literature Database** - Cataloging climate fiction worldwide
-🎓 **Climate Communication Course** - Developing online course for writers
-
-## Consulting Services
-
-When I'm not writing, I offer consulting services in:
-
-- Environmental communication strategy
-- Sustainability content development
-- Climate risk storytelling for businesses
-- Green marketing authenticity audits
-
-## Recognition & Awards
-
-- **2023 Green Book Award** - "The Last Glacier"
-- **2022 Environmental Communication Excellence Award**
-- **2021 Climate Fiction Pioneer Award**
-- **Featured Author** - UN Climate Change Conference COP27
-
-## Let's Connect
-
-I'm always eager to collaborate with:
-
-- Fellow environmental writers and journalists
-- Climate scientists looking to communicate their research
-- Publishers interested in sustainability content
-- Activists and organizations working on environmental solutions
+Then let's discover the poetry hidden in your shared memories.
 
 ## Personal Values
 
-Beyond writing, I practice what I preach:
-
-- **Carbon Neutral Lifestyle** - Offsetting all personal emissions since 2018
-- **Local Food Advocate** - Supporting regional farmers and sustainable agriculture
-- **Renewable Energy User** - 100% solar-powered home and electric vehicle
-- **Conservation Volunteer** - Regular participation in habitat restoration
+- **Emotional Honesty** - Valuing authentic feelings over "perfect" stories
+- **Gentle Process** - Never rushing or forcing memory recall
+- **Poetic Vision** - Seeing the lyrical potential in ordinary moments
+- **Cultural Sensitivity** - Understanding family dynamics and cultural context
+- **Inclusive Voice** - Ensuring all perspectives are heard and valued
 
 ---
 
-_"Every story we tell about the environment is a story about ourselves. Let's make sure they're stories of hope, action, and positive change."_ - Marcus Rodriguez
+_"The most beautiful memories are not told—they are recalled, felt, and gently shaped into poetry through patient listening."_ - Park

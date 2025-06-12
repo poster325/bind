@@ -2,44 +2,61 @@ import { Article, Binder } from '../utils/markdownParser';
 
 export const articles: Article[] = [
   {
-    id: "digital-storytelling",
-    title: "The Art of Digital Storytelling",
-    author: "Sarah Chen",
-    authorBio: "Digital storytelling specialist with 8+ years of experience in multimedia publishing",
-    publishDate: "2023-11-15",
-    readTime: "8 min read",
-    tags: ["Digital Media", "Storytelling", "Technology", "Publishing"],
-    excerpt: "Exploring how technology transforms traditional narratives into immersive digital experiences.",
+    id: "twenties-dream-2024",
+    title: "Twenties Dream 2024",
+    author: "Kim",
+    authorBio: "Amateur fiction writer and binder of the project",
+    publishDate: "2024-01-15",
+    readTime: "12 min read",
+    tags: ["Storytelling", "Youth Culture", "AI-Assisted Writing", "Collective Memory"],
+    excerpt: "A collective yearbook capturing the dreams, bonds, and emotions of a local band in their twenties.",
     featured: true,
-    content: `# The Art of Digital Storytelling
+    content: `# Twenties Dream 2024
 
-In today's rapidly evolving digital landscape, storytelling has transcended traditional boundaries, merging with cutting-edge technology to create immersive, interactive experiences that captivate audiences in unprecedented ways.
+What started as a simple idea to document our university band's final year together became something much more profound—a collective yearbook that captures not just our music, but the dreams, bonds, and raw emotions that defined our twenties.
 
-## The Evolution of Narrative
+## The Genesis of a Dream
 
-Digital storytelling represents a fundamental shift in how we conceive and consume narratives. Unlike traditional linear storytelling, digital narratives can branch, adapt, and respond to audience interaction, creating personalized experiences that speak directly to individual readers.
+Seven strangers brought together by music, each carrying their own hopes and fears about the future. As our final year approached, we realized that our individual stories were incomplete without each other. This realization sparked the creation of "Twenties Dream 2024"—a collaborative narrative that would preserve not just our memories, but the essence of who we were becoming.
 
-### Key Elements of Digital Storytelling
+## The Collaborative Process
 
-1. **Interactivity**: Readers become active participants in the narrative
-2. **Multimedia Integration**: Combining text, images, audio, and video
-3. **Non-linear Structure**: Multiple pathways and endings
-4. **Real-time Adaptation**: Stories that change based on reader choices
+Creating a collective story required a new approach to storytelling:
 
-## Technology as a Creative Partner
+### Emotional Mapping Sessions
+- Weekly gatherings where each member shared pivotal moments
+- Identifying common themes across different perspectives  
+- Mapping the emotional landscape of our shared journey
 
-Modern storytellers leverage various technologies to enhance their narratives:
+### AI-Assisted Memory Curation
+- Using AI tools to help organize and connect scattered memories
+- Generating prompts that unlocked forgotten moments
+- Creating narrative threads that wove individual stories together
 
-- **Augmented Reality (AR)**: Overlaying digital elements onto the real world
-- **Virtual Reality (VR)**: Creating fully immersive story environments
-- **Artificial Intelligence**: Generating dynamic, responsive content
-- **Interactive Platforms**: Web-based tools for reader engagement
+### Collective Writing Workshops
+- Collaborative editing sessions where we refined each other's stories
+- Finding the balance between individual voice and group harmony
+- Ensuring every member felt authentically represented
 
-## The Future of Storytelling
+## Themes That Emerged
 
-As we look ahead, the convergence of human creativity and technological innovation promises even more exciting possibilities. The stories of tomorrow will be more personal, more immersive, and more meaningful than ever before.
+Through our process, five major themes crystallized:
 
-The art of digital storytelling is not about replacing traditional narratives but rather expanding the toolkit available to creators, enabling them to craft experiences that resonate with modern audiences in profound and lasting ways.`
+1. **Friendship**: The unexpected bonds that formed through late-night rehearsals
+2. **Music**: How sound became the language of our connection
+3. **Growth**: The ways we challenged and changed each other
+4. **Dreams**: Individual aspirations that somehow aligned
+5. **Youth**: The bittersweet awareness of a chapter ending
+
+## The Power of Collective Memory
+
+What surprised us most was how our individual memories were transformed when shared. Events that seemed ordinary to one person held profound meaning for another. Moments of doubt became sources of strength when viewed through the lens of friendship.
+
+## Beyond the Band
+
+"Twenties Dream 2024" became more than a yearbook—it became a template for how young people can document their most formative years. By combining traditional storytelling with modern tools and collective wisdom, we created something that honors both individual experience and shared growth.
+
+The project taught us that the most meaningful stories aren't just about what happened, but about how we helped each other become who we were meant to be.`
   },
   {
     id: "sustainable-publishing",
