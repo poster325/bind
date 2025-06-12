@@ -116,131 +116,87 @@ The transition to sustainable publishing isn't just about reducing harm—it's a
 
 export const binders: Binder[] = [
   {
-    id: "sarah-chen",
-    name: "Sarah Chen",
-    title: "Digital Storytelling Specialist",
-    avatar: "/images/binders/sarah-chen.jpg",
-    location: "San Francisco, CA",
-    joinedDate: "2023-03-15",
-    tags: ["Digital Media", "Storytelling", "Interactive Design", "UX Writing", "Content Strategy"],
-    specialties: ["Interactive Narratives", "Multimedia Publishing", "Digital Art"],
-    languages: ["English", "Mandarin", "Japanese"],
+    id: "kim",
+    name: "Kim",
+    title: "Story Crafter of Emotional Highs",
+    avatar: "/images/binders/kim.jpg",
+    location: "Daejeon, South Korea",
+    joinedDate: "2024-01-15",
+    tags: ["Scene-Driven", "Empathetic", "Narrative Fiction", "Memory Curation", "Emotional Storytelling"],
+    specialties: ["Scene-Based Narratives", "Emotional Arc Development", "Relationship Dynamics"],
+    languages: ["Korean", "English"],
     social: {
-      website: "https://sarahchen.design",
-      twitter: "@sarahchen_design",
-      linkedin: "sarah-chen-design"
+      website: "",
+      twitter: "",
+      linkedin: ""
     },
     stats: {
-      booksPublished: 12,
-      totalReads: "45.2K",
-      rating: 4.8,
-      followers: 1250
+      booksPublished: 1,
+      totalReads: "7",
+      rating: 5.0,
+      followers: 7
     },
     featured: true,
-    content: `# Meet Sarah Chen
+    content: `# Meet Binder Kim
 
 ## About Me
 
-Hello! I'm Sarah Chen, a passionate digital storyteller who bridges the gap between traditional narrative and cutting-edge technology. With over 8 years of experience in multimedia publishing, I specialize in creating immersive, interactive stories that captivate and engage modern audiences.
+I'm Kim, a fiction writer based in Daejeon who builds stories around emotion, not just events. As a Binder, I guide people to uncover personal truths and emotional turning points hidden in everyday moments. My goal is to curate memory-based stories that feel both cinematic and deeply human.
 
-## My Journey
+## My Approach
 
-My journey into digital storytelling began during my graduate studies in Interactive Media Design at Stanford University. What started as curiosity about how technology could enhance narrative experiences has evolved into a career dedicated to pushing the boundaries of what stories can be.
+I treat every book like a narrative, with rising tension, a meaningful climax, and emotional closure. I begin not with a timeline, but with the heart of the story — a moment of impact — and build from there. When gathering memories, I focus on relationship dynamics, emotional shifts, and lived perspectives rather than just facts.
 
-### Background & Education
+## Binder Mission
 
-- **M.A. Interactive Media Design** - Stanford University (2016)
-- **B.A. English Literature** - UC Berkeley (2014)
-- **Certificate in UX Design** - General Assembly (2017)
+To discover each group's unique emotional arc, and to translate those invisible bonds into a shared memory artifact. I believe the best stories are not told — they are recalled, felt, and shaped through deep listening.
 
-## What I Do
+## Featured Project
 
-I create digital narratives that combine:
+### Twenties Dream: 2024
 
-- **Interactive Elements**: Choose-your-own-adventure style storytelling
-- **Multimedia Integration**: Seamlessly blending text, audio, and visual elements
-- **Responsive Design**: Stories that adapt to different devices and reading preferences
-- **User Experience Focus**: Ensuring every interaction enhances the narrative
+A story-driven yearbook for a university band navigating passion, burnout, and friendship.
+
+- **7 participants** (band members and close friends)
+- **Interviews guided around emotional climax**, inter-member dynamics, and personal turning points
+- **Intentionally avoids dry chronological edits** in favor of immersive narrative pacing
+- **Designed to capture raw moments** and relational growth
+
+## My Workflow as a Binder
+
+### 🧭 Climax-Oriented Structure
+I begin from what each person feels is the most emotionally intense moment, then work backwards to make the story meaningful.
+
+### 🎭 Character Through Connection
+I explore how each member relates to others — who they felt close to, distanced from, or changed by.
+
+### 💡 Emotion Over Facts
+I don't ask everyone to recall everything. Some give timeline structure, others offer texture through feelings and perspective.
+
+### 🧵 Story from Fragments
+I connect casual voice memos, texts, and conversation into a scene-based narrative with emotional logic.
+
+### 🤖 AI as Sketch Partner
+I imagine an AI that not only listens, but sketches: generating visuals, capturing tone, and helping us feel the scene together.
 
 ## My Publishing Philosophy
 
-> "Every story deserves to be told in the medium that best serves its purpose. Sometimes that's a traditional book, sometimes it's an interactive digital experience, and often it's something entirely new."
+> "The best stories are not told — they are recalled, felt, and shaped through deep listening."
 
 I believe in:
 
-- **Reader Agency**: Giving readers meaningful choices in how they experience stories
-- **Accessibility**: Creating inclusive narratives that welcome all audiences
-- **Innovation**: Constantly exploring new ways to tell timeless stories
-- **Collaboration**: Working with other creators to push creative boundaries
+- **Emotional Truth**: Finding the heart of every story before building the structure
+- **Relational Focus**: Understanding how people connect and change each other
+- **Cinematic Storytelling**: Creating scenes that readers can visualize and feel
+- **Deep Listening**: Hearing not just what happened, but what it meant
 
-## Featured Works
+## Binder Style
 
-### "Echoes of Tomorrow" (2023)
-
-An interactive sci-fi novella that adapts based on reader choices, featuring:
-
-- 12 unique story branches
-- Immersive audio design
-- Real-time character development
-- Multi-device continuity
-
-### "The Memory Keeper" (2023)
-
-A multimedia memoir combining:
-
-- Personal photography and artifacts
-- Audio interviews with family members
-- Interactive family tree exploration
-- AR elements for enhanced storytelling
-
-### "Urban Legends Reimagined" (2022)
-
-A collaborative anthology featuring:
-
-- 8 contemporary authors
-- Interactive maps and historical context
-- Community-driven story extensions
-- Cross-platform storytelling
-
-## Skills & Expertise
-
-**Technical Skills:**
-
-- Adobe Creative Suite (Expert)
-- Twine & Ink (Interactive Fiction)
-- HTML/CSS/JavaScript (Intermediate)
-- Unity (Basic 3D Storytelling)
-
-**Creative Skills:**
-
-- Narrative Design
-- Character Development
-- World Building
-- Visual Storytelling
-- Audio Production
-
-## Let's Collaborate
-
-I'm always excited to work with fellow creators, whether you're:
-
-- A writer looking to explore digital formats
-- A developer interested in narrative projects
-- A publisher seeking innovative content approaches
-- A reader with an amazing story idea
-
-## Current Projects
-
-🔮 **"Quantum Hearts"** - A romance novel with parallel universe story branches
-📱 **Mobile Storytelling App** - Developing a new platform for micro-narratives
-🎨 **AR Poetry Collection** - Bringing poems to life through augmented reality
-
-## Get in Touch
-
-I love connecting with fellow storytellers and creative minds. Feel free to reach out through any of my social channels or drop me a message here on the platform!
+**Scene-Driven & Empathetic** - I craft narratives that feel like living memories, focusing on the emotional weight of moments rather than chronological accuracy.
 
 ---
 
-_"Stories shape our world, and technology shapes our stories. Let's create something amazing together."_ - Sarah Chen`
+_"Every memory has an emotional arc. My job is to find it and make it sing."_ - Kim`
   },
   {
     id: "marcus-rodriguez",
