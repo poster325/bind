@@ -2,7 +2,7 @@
 title: 티디를 풀어서 부르자면, 트웬티스 드림이라고
 date: 2025-05-29
 category: Case Study
-excerpt: 카이스트 밴드 동아리 <Twenties Dream>와 아마추어 소설 작가 김씨와 함께한 Bind의 첫번째 케이스 스터디
+excerpt: 카이스트 밴드 동아리 <Twenties Dream>와 아마추어 소설 작가 김씨와 함께한 Bind의 첫 번째 케이스 스터디
 author:
   name: Hyewon Lee
   role: Team Bind
