@@ -6,7 +6,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 
 // Set up PDF.js worker
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 
 const Container = styled.div`
   min-height: 100vh;
@@ -279,7 +279,8 @@ const PDFReader: React.FC = () => {
         setError(null);
         
         // Use the PDF path based on article ID
-        const pdfPath = `/pdfs/${id}.pdf`;
+        const pdfPath = `/${id}.pdf`;
+        console.log("Loading PDF from path:", pdfPath);
         setPdfFile(pdfPath);
         setBookTitle(id?.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) || "Book");
       } catch (err) {
@@ -300,7 +301,8 @@ const PDFReader: React.FC = () => {
 
   const onDocumentLoadError = (error: Error) => {
     console.error("PDF load error:", error);
-    setError("Failed to load PDF document");
+    console.error("PDF file path:", pdfFile);
+    setError(`Failed to load PDF: ${error.message || 'Unknown error'}`);
     setIsLoading(false);
   };
 
