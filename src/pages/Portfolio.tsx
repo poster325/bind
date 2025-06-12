@@ -455,7 +455,7 @@ const Portfolio: React.FC = () => {
           </SearchSection>
 
           <BinderGrid>
-            {[...filteredBinders, ...filteredBinders].map((binder) => (
+            {filteredBinders.map((binder) => (
               <BinderCard key={binder.id}>
                 <Link to={`/binder/${binder.id}`}>
                   <BinderAvatar>
