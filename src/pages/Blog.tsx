@@ -364,6 +364,7 @@ const Blog: React.FC = () => {
       <PageInfo
         title="Blog"
         subtitle="Insights, updates, and stories from the world of AI-powered publishing"
+        bannerImage="imgs/banner_3.jpg"
       />
 
       {featuredPost && (

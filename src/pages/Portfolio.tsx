@@ -382,6 +382,7 @@ const Portfolio: React.FC = () => {
       <PageInfo
         title="Portfolio"
         subtitle="Our binders, their autobiography, and contributed work"
+        bannerImage="imgs/banner_2.jpg"
       />
 
       <Section>

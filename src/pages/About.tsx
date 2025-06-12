@@ -165,6 +165,7 @@ const About = () => {
       <PageInfo
         title="About"
         subtitle={`Bind reimagines book publishing as a living process of collaborative memory.\nWe believe paper books are not just to be written, but to belived and remembered together.`}
+        bannerImage="imgs/banner_1.jpg"
       />
 
       <BackgroundSection>

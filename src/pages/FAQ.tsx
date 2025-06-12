@@ -260,6 +260,7 @@ const FAQ: React.FC = () => {
       <PageInfo
         title="Frequently Asked Questions"
         subtitle="Find answers to common questions about Bind and AI-powered publishing"
+        bannerImage="imgs/banner_4.jpg"
       />
 
       <Section>
