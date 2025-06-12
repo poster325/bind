@@ -575,7 +575,7 @@ const Home: React.FC = () => {
           </CardContainer>
 
           <TwoColumn style={{ marginTop: "4rem" }}>
-            <Figure src="/imgs/article1-cover.png" />
+            <Figure src="/imgs/home-figure2.png" />
             <FlexBox gap={12}>
               <SubtitleText>What is a Binder?</SubtitleText>
               <BodyText>
